@@ -1,0 +1,15 @@
+
+@mixin sc($size,$color) {
+  font-size:$size;
+  color:$color
+}
+
+@mixin wh($w,$h) {
+  width: $h;
+  height: $h;
+}
+
+@mixin flex($type:space-between ) {
+  display: flex;
+  justify-content: $type;
+}
