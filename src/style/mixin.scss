@@ -1,4 +1,8 @@
 
+$green: #42BD56;
+$bj: #ffffff;
+$gray: efefed;
+$baseFontSize: 75;
 @mixin sc($size,$color) {
   font-size:$size;
   color:$color
@@ -12,4 +16,12 @@
 @mixin flex($type:space-between ) {
   display: flex;
   justify-content: $type;
+}
+
+@mixin wh($w,$h) {
+  width:$w;
+  height:$h;
+}
+@function px2rem($n) {
+  @return $n/$baseFontSize*1rem
 }
