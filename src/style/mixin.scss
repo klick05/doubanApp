@@ -1,7 +1,8 @@
 
 $green: #42BD56;
 $bj: #ffffff;
-$gray: efefed;
+$gray: #A6AAAF;
+$bjgray:#f9f9f9;
 $baseFontSize: 75;
 @mixin sc($size,$color) {
   font-size:$size;
@@ -22,6 +23,12 @@ $baseFontSize: 75;
   width:$w;
   height:$h;
 }
-@function px2rem($n) {
-  @return $n/$baseFontSize*1rem
+@mixin bimg($url) {
+  background: url($url);
+  background-size:100%;
+  background-repeat: no-repeat;
 }
+@function px2rem($n) {
+  @return $n / 75 * 2rem;
+}
+
