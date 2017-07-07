@@ -5,11 +5,41 @@
         <p>影视 图书 唱片 小组等</p>
       </div>
     </div>
+
+    <div class="banner">
+      <swiper :options="swiperOption">
+        <swiper-slide v-for="item in imgData">
+          <img :src="item" alt="">
+        </swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
+    </div>
   </div>
 </template>
 
 <script>
-  
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import {getImg} from '../../../api/axios.js'
+export default {
+  components: {
+    swiper,
+    swiperSlide
+  },
+  data () {
+    return {
+      imgData: null,
+      swiperOption: {
+        pagination: '.swiper-pagination',
+        slidesPerView: 'auto'
+      }
+    }
+  },
+  mounted () {
+    getImg().then(res => {
+      this.imgData = res.data.imgData
+    }, erro => console.log(erro))
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -38,6 +68,7 @@
         position:fixed;
         text-indent: px2rem(30);
         line-height:px2rem(30);
+        color:$gray;
         &:before {
           content: '';
           display:inline-block;
@@ -48,6 +79,11 @@
           @include bimg('../../../assets/imge/ic_search_gray.png');
         }
       }
+    }
+  }
+  .banner {
+    img {
+      @include wh(100%,px2rem(120))
     }
   }
 </style>
