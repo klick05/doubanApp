@@ -1,0 +1,22 @@
+{
+  "imgData": [
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/01.jpg?raw=true",
+  "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/02.jpg?raw=true",
+  "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/03.jpg?raw=true"
+  ],
+  "Hotspot": {
+    "one": {
+      "title": "在人间已是颠,为何要上青天",
+      "content": "我爸便是一个潇洒的人，用实践证明了，只要肯放弃，世上无难事",
+      "imgSrc": "http://dynamic-image.yesky.com/300x-/uploadImages/upload/20140811/44qt4xmdgngjpg.jpg",
+      "author": "曾良军"
+    },
+    "two": {
+      "title": "一周热门影视|这样的题材，只有许安华还在坚持",
+      "content": "它是悲的，又予人希望。江河万里有缘再见，珍重。",
+      "imgSrc": "http://i0.sinaimg.cn/gm/2012/0525/U4511P115DT20120525111452.jpg",
+      "author": "豆瓣电影",
+      "source": "一周热门影视"
+    }
+  }
+}

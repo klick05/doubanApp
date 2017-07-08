@@ -28,7 +28,17 @@ $baseFontSize: 75;
   background-size:100%;
   background-repeat: no-repeat;
 }
+
+@mixin Omitted($num) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+}
+
 @function px2rem($n) {
   @return $n / 75 * 2rem;
 }
+
+
 

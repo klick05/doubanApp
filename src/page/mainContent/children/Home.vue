@@ -14,16 +14,30 @@
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </div>
+    <home-hot moduleTitle="热点">
+      <hotItem v-for="item in hotData" 
+               :title="item.title"
+               :content="item.content"
+               :imgSrc="item.imgSrc"
+               :author="item.author"
+               :source="item.source"
+               ></hotItem>
+    </home-hot>
   </div>
+
 </template>
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import {getImg} from '../../../api/axios.js'
+import {getImg, getHot} from '../../../api/axios.js'
+import homeHot from '../../../components/moduleOne/ModuleOne'
+import hotItem from '../../../components/moduleOne/moduleItem'
 export default {
   components: {
     swiper,
-    swiperSlide
+    swiperSlide,
+    homeHot,
+    hotItem
   },
   data () {
     return {
@@ -31,13 +45,15 @@ export default {
       swiperOption: {
         pagination: '.swiper-pagination',
         slidesPerView: 'auto'
-      }
+      },
+      hotData: null
     }
   },
   mounted () {
     getImg().then(res => {
       this.imgData = res.data.imgData
     }, erro => console.log(erro))
+    getHot().then(res => { this.hotData = res.data.Hotspot })
   }
 }
 </script>
