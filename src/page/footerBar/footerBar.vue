@@ -44,6 +44,7 @@ a {
   bottom:0;
   left:0;
   right:0;
+  z-index:100;
   border-top:1px solid #cccccc;
   background: $bjgray;
   @include flex(space-around);

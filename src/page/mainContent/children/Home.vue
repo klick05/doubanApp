@@ -14,15 +14,20 @@
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </div>
-    <home-hot moduleTitle="热点">
-      <hotItem v-for="item in hotData" 
+    <!-- 热点 -->
+    <Module-one moduleTitle="热点" orange="yes">
+      <module-item v-for="(item, index) in hotData" 
                :title="item.title"
                :content="item.content"
                :imgSrc="item.imgSrc"
                :author="item.author"
                :source="item.source"
-               ></hotItem>
-    </home-hot>
+               :key="index"
+               >
+      </module-item>
+    </Module-one>
+    <!-- 豆瓣时间 -->
+    <douban-time></douban-time>
   </div>
 
 </template>
@@ -30,14 +35,16 @@
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import {getImg, getHot} from '../../../api/axios.js'
-import homeHot from '../../../components/moduleOne/ModuleOne'
-import hotItem from '../../../components/moduleOne/moduleItem'
+import ModuleOne from '../../../components/moduleOne/ModuleOne'
+import moduleItem from '../../../components/moduleOne/moduleItem'
+import doubanTime from './doubanTimer'
 export default {
   components: {
     swiper,
     swiperSlide,
-    homeHot,
-    hotItem
+    ModuleOne,
+    moduleItem,
+    doubanTime
   },
   data () {
     return {
@@ -53,17 +60,25 @@ export default {
     getImg().then(res => {
       this.imgData = res.data.imgData
     }, erro => console.log(erro))
-    getHot().then(res => { this.hotData = res.data.Hotspot })
+    getHot().then(res => {
+      this.hotData = res.data.Hotspot
+    })
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../../../style/mixin.scss';
+.Home {
+  padding:px2rem(50) 0 px2rem(100);
   .search_top {
     @include wh(100%,px2rem(50))
     background: $green;
-    position:relative;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
     .searchBar {
       @include wh(px2rem(320),px2rem(30));
       background: $bj;
@@ -97,9 +112,13 @@ export default {
       }
     }
   }
+
   .banner {
     img {
       @include wh(100%,px2rem(120))
     }
   }
+}
+
+
 </style>
