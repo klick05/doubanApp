@@ -83,5 +83,12 @@
       "imgSrc": "http://img5.mtime.cn/pi/2017/03/10/100327.37366433_1000X1000.jpg",
       "author": "life"
     }
-  }
+  },
+  "findData":[
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/author.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/jw.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/xiari.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/rushi.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/zhoumo.jpg?raw=true"
+  ]
 }

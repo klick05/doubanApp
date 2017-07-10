@@ -15,7 +15,7 @@
 
 <script>
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
-  import {getImg} from '../../../api/axios.js'
+  import {getFind} from '../../../api/axios.js'
   import ModuleOne from '../../../components/moduleOne/ModuleOne'
   export default {
     name: 'Find',
@@ -28,7 +28,7 @@
       return {
         findData: null,
         swiperOption: {
-          slidesPerView: 3,
+          slidesPerView: 3.5,
           freeMode: true,
           slidesOffsetBefore: 20,
           freeModeMomentum: false,
@@ -37,8 +37,8 @@
       }
     },
     mounted () {
-      getImg().then(res => {
-        this.findData = res.data.imgData
+      getFind().then(res => {
+        this.findData = res.data.findData
       })
     }
   }
