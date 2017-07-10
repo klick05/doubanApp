@@ -18,7 +18,9 @@
 <style lang="scss" scoped>
 @import '../../style/mixin.scss';
 .moduleOne {
+  margin-top:px2rem(10);
   padding:px2rem(10) 0;
+  background:$bj;
   &.blackbj{
     background:#eeeeee;
   }
@@ -34,7 +36,6 @@
       }
       &.g_border {
         border-left:8px solid $green;
-        color: $green;
       }
     }
     a {

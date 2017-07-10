@@ -7,7 +7,7 @@
             {{content}}
           </p>
         </div>
-        <div class="c_right">
+        <div v-if="imgSrc" class="c_right">
           <img :src="imgSrc" alt="">
         </div>
       </div>
@@ -35,7 +35,7 @@ export default {
   .content {
     @include flex();
     .c_left{
-      width:px2rem(200);
+      width:100%;
       .title {
         font-weight:900;
         @include Omitted(3);
@@ -49,8 +49,11 @@ export default {
       }
     }
     .c_right {
+      @include wh(px2rem(200), px2rem(100))
+      text-align:right;
       img {
-        @include wh(px2rem(100), px2rem(100))
+        max-width:px2rem(100);
+        max-height:px2rem(120);
       }
     }
   }

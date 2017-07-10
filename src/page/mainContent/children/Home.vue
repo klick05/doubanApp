@@ -28,23 +28,50 @@
     </Module-one>
     <!-- 豆瓣时间 -->
     <douban-time></douban-time>
+    <!--一刻-->
+    <Module-one moduleTitle="一刻" green="yes">
+      <module-item 
+        :title="yikeData.title"
+        :content="yikeData.content"
+        :imgSrc="yikeData.imgSrc"
+        :author="yikeData.author"
+        :source="yikeData.source"
+        :key="yikeData.author"
+      >
+      </module-item>
+    </Module-one>
+    <!--发现-->
+    <find></find>
+    <!--为你推荐-->
+    <Module-one moduleTitle="为你推荐" green="yes">
+      <module-item v-for="(item, index) in recommendData" 
+               :title="item.title"
+               :content="item.content"
+               :imgSrc="item.imgSrc"
+               :author="item.author"
+               :source="item.source"
+               :key="index"
+               >
+      </module-item>
+    </Module-one>
   </div>
-
 </template>
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import {getImg, getHot} from '../../../api/axios.js'
+import {getImg, getHot, getYike, gethomRecommend} from '../../../api/axios.js'
 import ModuleOne from '../../../components/moduleOne/ModuleOne'
 import moduleItem from '../../../components/moduleOne/moduleItem'
 import doubanTime from './doubanTimer'
+import find from './Find'
 export default {
   components: {
     swiper,
     swiperSlide,
     ModuleOne,
     moduleItem,
-    doubanTime
+    doubanTime,
+    find
   },
   data () {
     return {
@@ -53,7 +80,9 @@ export default {
         pagination: '.swiper-pagination',
         slidesPerView: 'auto'
       },
-      hotData: null
+      hotData: null,
+      yikeData: {},
+      recommendData: null
     }
   },
   mounted () {
@@ -63,6 +92,17 @@ export default {
     getHot().then(res => {
       this.hotData = res.data.Hotspot
     })
+    getYike().then(res => {
+      this.yikeData = res.data.yike
+    })
+    gethomRecommend().then(res => {
+      this.recommendData = res.data.homRecommend
+    })
+  },
+  methods: {
+    show () {
+      console.log(this.yikeData)
+    }
   }
 }
 </script>
@@ -70,7 +110,8 @@ export default {
 <style lang="scss" scoped>
 @import '../../../style/mixin.scss';
 .Home {
-  padding:px2rem(50) 0 px2rem(100);
+  padding:px2rem(50) 0 px2rem(50);
+  background:$bjgray;
   .search_top {
     @include wh(100%,px2rem(50))
     background: $green;
@@ -119,6 +160,4 @@ export default {
     }
   }
 }
-
-
 </style>
