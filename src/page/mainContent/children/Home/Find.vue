@@ -15,8 +15,8 @@
 
 <script>
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
-  import {getFind} from '../../../api/axios.js'
-  import ModuleOne from '../../../components/moduleOne/ModuleOne'
+  import {getFind} from '../../../../api/axios.js'
+  import ModuleOne from '../../../../components/moduleOne/ModuleOne.vue'
   export default {
     name: 'Find',
     components: {
@@ -45,7 +45,7 @@
 </script>
 
 <style lang="scss" scoped>
- @import '../../../style/mixin.scss';
+@import '../../../../style/mixin.scss';
  .find {
   .find_item {
       display:block;

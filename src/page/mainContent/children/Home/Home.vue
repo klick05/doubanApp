@@ -59,9 +59,9 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import {getImg, getHot, getYike, gethomRecommend} from '../../../api/axios.js'
-import ModuleOne from '../../../components/moduleOne/ModuleOne'
-import moduleItem from '../../../components/moduleOne/moduleItem'
+import {getImg, getHot, getYike, gethomRecommend} from '../../../../api/axios.js'
+import ModuleOne from '../../../../components/moduleOne/ModuleOne'
+import moduleItem from '../../../../components/moduleOne/moduleItem'
 import doubanTime from './doubanTimer'
 import find from './Find'
 export default {
@@ -108,7 +108,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../style/mixin.scss';
+@import '../../../../style/mixin.scss';
 .Home {
   padding:px2rem(50) 0 px2rem(50);
   background:$bjgray;
@@ -134,7 +134,7 @@ export default {
           right:px2rem(-35);
           top:px2rem(4);
           @include wh(px2rem(25),px2rem(25));
-          @include bimg('../../../assets/imge/login.png');
+          @include bimg('../../../../assets/imge/login.png');
         }
       p {
         position:fixed;
@@ -148,7 +148,7 @@ export default {
           left:px2rem(5);
           top:px2rem(5);
           @include wh(px2rem(20),px2rem(20));
-          @include bimg('../../../assets/imge/ic_search_gray.png');
+          @include bimg('../../../../assets/imge/ic_search_gray.png');
         }
       }
     }

@@ -1,0 +1,29 @@
+{
+  "hotMovie":{
+    "1":{
+      "name": "神偷奶爸",
+      "score": 7.2,
+      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+    },
+    "2":{
+      "name": "神偷奶爸",
+      "score": 7.2,
+      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+    },
+    "3":{
+      "name": "神偷奶爸",
+      "score": 7.2,
+      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+    },
+    "4":{
+      "name": "神偷奶爸",
+      "score": 7.2,
+      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+    },
+    "5":{
+      "name": "神偷奶爸",
+      "score": 7.2,
+      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+    }
+  }
+}

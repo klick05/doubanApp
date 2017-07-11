@@ -4,7 +4,7 @@
           <div class="home"></div>
           首页
       </router-link>
-      <router-link active-class="subject_active" to="/subject">
+      <router-link active-class="subject_active" to="/douban">
           <div class="subject"></div>
           书影音
       </router-link>

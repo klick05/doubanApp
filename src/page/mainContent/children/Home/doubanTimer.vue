@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import moduleOne from '../../../components/moduleOne/ModuleOne'
+import moduleOne from '../../../../components/moduleOne/ModuleOne'
 import timeItem from './TimerItem'
-import {getdoubanTime} from '../../../api/axios.js'
+import {getdoubanTime} from '../../../../api/axios.js'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
   components: {

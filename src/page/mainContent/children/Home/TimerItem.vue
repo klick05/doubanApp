@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../style/mixin.scss';
+@import '../../../../style/mixin.scss';
   .doubanTimer {
   width:px2rem(300);
   background: $bj;
