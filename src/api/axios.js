@@ -10,3 +10,7 @@ export const getFind = () => axios.get('http://localhost:8080/static/json/Data.j
 export const getHotMovie = () => axios.get('http://localhost:8080/static/json/movie.json')
 export const getAboutShow = () => axios.get('http://localhost:8080/static/json/movie.json')
 export const getList = () => axios.get('http://localhost:8080/static/json/movie.json')
+export const getFilm = () => axios.get('http://localhost:8080/static/json/movie.json')
+export const getprobably = () => axios.get('http://localhost:8080/static/json/movie.json')
+export const getfilmItem = () => axios.get('http://localhost:8080/static/json/movie.json')
+export const getdoubanFind = () => axios.get('http://localhost:8080/static/json/movie.json')

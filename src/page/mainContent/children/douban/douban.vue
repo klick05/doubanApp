@@ -45,6 +45,7 @@ export default {
   border-bottom:1px solid #e1e0e0;
   line-height:px2rem(30);
   @include flex(space-between)
+  z-index:100;
   a {
     display: block;
     width:px2rem(30);

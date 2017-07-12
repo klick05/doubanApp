@@ -31,6 +31,9 @@ export default {
   h4 {
     font-weight:700;
     font-size: px2rem(14);
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
   }
   p {
     color: $gray;

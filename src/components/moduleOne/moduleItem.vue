@@ -15,6 +15,7 @@
       <div class="source">
         <p v-if="author">作者:{{author}}</p>
         <p v-if="source">来自：{{source}}</p>
+        <slot name=""FilmCritic></slot>
       </div>
   </div>
 </template>
@@ -52,7 +53,7 @@ export default {
       @include wh(px2rem(200), px2rem(100))
       text-align:right;
       img {
-        max-width:px2rem(100);
+        width:px2rem(100);
         max-height:px2rem(120);
       }
     }

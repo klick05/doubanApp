@@ -58,7 +58,112 @@
     }
   },
   "SelectList":[
-    "http://a2.qpic.cn/psb?/V1184wa93tPVI7/CCvEqTKCSFcbMCXOf9n1LbMWJp6RzqkSWyvcUCFAzNQ!/b/dDwBAAAAAAAA&bo=kAGQAQAAAAARBzA!&rf=viewer_4",
-    "http://a2.qpic.cn/psb?/V1184wa93tPVI7/vhlTCZ0R4HZKAT2Qwv0GZCl70k1Cd8EOdBK*zXOC1mw!/b/dDwBAAAAAAAA&bo=kAGQAQAAAAARADc!&rf=viewer_4"
-  ]
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/piaofang.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/top250.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/koubei.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/xinpian.jpg?raw=true"
+  ],
+  "RecommendToday": {
+    "1":{
+      "name": "米歇尔罗德里格兹",
+      "cover": "http://moviepic.manmankan.com/yybpic/yanyuan/pic/160/307002_s.jpg",
+      "remarks": "今天过生日"
+    },
+    "2":{
+      "name": "成龙",
+      "cover": "http://sns01.19louimg.cn/forum/2010/09/16-23/middle_20100916_70c7fd133c105c0de966GiD6OpdQ05L0.jpg",
+      "remarks": "电影即将上映"
+    },
+    "3":{
+      "name": "杰森斯坦森",
+      "cover": "http://p2.gexing.com/shaitu/20120821/2202/503394db81c0f.jpg",
+      "remarks": "电影即将上映"
+    },
+    "4":{
+      "name": "成龙",
+      "cover": "http://sns01.19louimg.cn/forum/2010/09/16-23/middle_20100916_70c7fd133c105c0de966GiD6OpdQ05L0.jpg",
+      "remarks": "电影即将上映"
+    },
+    "5":{
+      "name": "巨石强森",
+      "cover": "http://www.95dm.com/pic/20170120/20171201445291.jpg",
+      "remarks": "电影即将上映"
+    },
+    "6":{
+      "name": "胡歌",
+      "cover": "http://img0.selfimg.com.cn/gq24640x/2016/09/04/1472965548_LcZWoN.jpg",
+      "remarks": "电影即将上映"
+    }
+  },
+  "probably":{
+    "1":{
+      "name": "千与千寻",
+      "score": 6.2,
+      "cover": "http://s2.sinaimg.cn/mw690/8272b249t7c396f5c2a01&690"
+    },
+    "2":{
+      "name": "速度与激情",
+      "score": 5.2,
+      "cover": "http://npic7.fangtoo.com/cn/zixun/zh-chs/2017-01/17/32765-4614036035292342.jpg"
+    },
+    "3":{
+      "name": "蜘蛛侠",
+      "score": 8.6,
+      "cover": "http://img.lenovomm.com/s3/img/app/app-img-lestore/3444-2015-07-15111129-1436929889790.jpg?isCompress=true&width=342&height=513&quantity=0.8&rotate=true&dk=2"
+    },
+    "4":{
+      "name": "神火之盗",
+      "score": 9.5,
+      "cover": "http://g.hiphotos.baidu.com/baike/c0%3Dbaike60%2C5%2C5%2C60%2C20/sign=09a6bb570a55b31988f48a2722c0e943/9213b07eca806538aab2534597dda144ad348208.jpg"
+    },
+    "5":{
+      "name": "寒战",
+      "cover": "http://pic.58pic.com/58pic/17/53/44/42z58PICadu_1024.jpg"
+    },
+    "6": {
+      "name": "霍比特人",
+      "cover": "http://s3.sinaimg.cn/mw690/4ebe0115td4ac21e90a22&690",
+      "score": 9.5
+    }
+  },
+  "filmItem": {
+    "1": {
+      "title": "改变我偏见的漫威大片",
+      "content": "椅子不喜欢这种所谓的好莱坞爽片。此次误打误撞一个人去电影院看了。居然觉得挺有意思的",
+      "use": "木老勇师",
+      "film": "蜘蛛侠",
+      "imgSrc": "http://img.lenovomm.com/s3/img/app/app-img-lestore/3444-2015-07-15111129-1436929889790.jpg?isCompress=true&width=342&height=513&quantity=0.8&rotate=true&dk=2"
+    },
+    "2": {
+      "title": "酸中带涩，同年的回忆",
+      "content": "看了这部影片后，感觉到了一种童年的快乐。属于那种酸中带甜，涩中带甘的",
+      "use": "宾克斯的杯酒",
+      "film": "千与千寻",
+      "imgSrc": "http://s2.sinaimg.cn/mw690/8272b249t7c396f5c2a01&690"
+    },
+    "3": {
+      "title": "硬汉霸气的影片！！~",
+      "content": "椅子不喜欢这种所谓的好莱坞爽片。此次误打误撞一个人去电影院看了。居然觉得挺有意思的",
+      "use": "木老勇师",
+      "film": "速度与激情",
+      "imgSrc": "http://npic7.fangtoo.com/cn/zixun/zh-chs/2017-01/17/32765-4614036035292342.jpg"
+    }
+  },
+  "doubanFind": {
+    "1": {
+      "title": "同事入选IMDB250和豆瓣电影的250的电影",
+      "number":20052,
+      "imgSrc":"https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/piaofang.jpg?raw=true"
+    },
+    "2": {
+      "title": "带你进入不正常的世界",
+      "number":55710,
+      "imgSrc":"https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/top250.jpg?raw=true"
+    },
+    "3": {
+      "title": "用电【影】来祭奠逝去的年华",
+      "number":22903,
+      "imgSrc":"https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/koubei.jpg?raw=true"
+    }
+  }
 }
