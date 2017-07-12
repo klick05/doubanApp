@@ -7,3 +7,6 @@ export const getdoubanTime = () => axios.get('http://localhost:8080/static/json/
 export const getYike = () => axios.get('http://localhost:8080/static/json/Data.json')
 export const gethomRecommend = () => axios.get('http://localhost:8080/static/json/Data.json')
 export const getFind = () => axios.get('http://localhost:8080/static/json/Data.json')
+export const getHotMovie = () => axios.get('http://localhost:8080/static/json/movie.json')
+export const getAboutShow = () => axios.get('http://localhost:8080/static/json/movie.json')
+export const getList = () => axios.get('http://localhost:8080/static/json/movie.json')

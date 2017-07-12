@@ -2,28 +2,63 @@
   "hotMovie":{
     "1":{
       "name": "神偷奶爸",
-      "score": 7.2,
+      "score": 6.2,
       "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
     },
     "2":{
-      "name": "神偷奶爸",
-      "score": 7.2,
-      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+      "name": "智G",
+      "score": 5.2,
+      "cover": "http://up.th38.net/uploads/allimg/160614/1155163T5-9.jpg"
     },
     "3":{
-      "name": "神偷奶爸",
-      "score": 7.2,
-      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+      "name": "无罪",
+      "score": 8.6,
+      "cover": "http://img0.imgtn.bdimg.com/it/u=3903749765,1764568199&fm=26&gp=0.jpg"
     },
     "4":{
-      "name": "神偷奶爸",
-      "score": 7.2,
-      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+      "name": "画皮",
+      "score": 9.5,
+      "cover": "http://www.sfs-cn.com/node3/node924/node22127/node22128/images/00179559.jpg"
     },
     "5":{
-      "name": "神偷奶爸",
-      "score": 7.2,
-      "cover": "http://img32.mtime.cn/up/2013/07/08/174621.51485871_500.jpg"
+      "name": "诸天间道",
+      "cover": "http://pic.58pic.com/58pic/16/46/87/77358PICIMQ_1024.jpg"
     }
-  }
+  },
+  "abouShow": {
+    "1":{
+      "name": "悟空传",
+      "cover": "http://imgnews.gmw.cn/attachement/jpg/site2/20160913/6311216910886391278.jpg",
+      "time": "07.13",
+      "wantsee": "3450"
+    },
+    "2":{
+      "name": "大护法",
+      "cover": "http://img1.dzwww.com:8080/tupian/20170710/34/939637367073948546.jpg",
+      "time": "07.14",
+      "wantsee": "3450"
+    },
+    "3":{
+      "name": "飞跃老人院",
+      "cover": "http://img1.cache.netease.com/catchpic/E/EC/ECE77F7F43F9CA9F961E75B0B6815EE7.jpg",
+      "time": "07.16",
+      "wantsee": "2450"
+    },
+    "4":{
+      "name": "百鸟朝凤",
+      "cover": "http://img1.cache.netease.com/catchpic/A/A1/A187A5963E45DBE72CDE224679840D6C.jpg",
+      "time": "07.18",
+      "wantsee": "1850"
+    },
+    "5":{
+      "name": "左耳",
+      "cover": "http://www.sanyarb.com.cn/images/attachement/jpg/site2/20150522/00016c57ef7416c85ca904.jpg",
+      "time": "07.23",
+      "wantsee": "1450"
+    }
+  },
+  "SelectList":[
+    "http://a2.qpic.cn/psb?/V1184wa93tPVI7/CCvEqTKCSFcbMCXOf9n1LbMWJp6RzqkSWyvcUCFAzNQ!/b/dDwBAAAAAAAA&bo=kAGQAQAAAAARBzA!&rf=viewer_4",
+    "http://a2.qpic.cn/psb?/V1184wa93tPVI7/vhlTCZ0R4HZKAT2Qwv0GZCl70k1Cd8EOdBK*zXOC1mw!/b/dDwBAAAAAAAA&bo=kAGQAQAAAAARADc!&rf=viewer_4"
+  ]
 }

@@ -1,8 +1,9 @@
 <template>
   <div class="douban_content">
-    <img src="http://www.th7.cn/d/file/p/2016/06/17/0d7a90e6600b009c3e2cf9e23cc182f2.jpg" alt="">
-    <h4>渗透奶爸</h4>
-    <score score="7"></score>
+    <span class="time" v-if="time">{{time}}</span>
+    <img :src="cover" alt="">
+    <h4>{{name}}</h4>
+    <slot></slot>
   </div>
 </template>
 
@@ -11,13 +12,19 @@ import score from './score'
 export default {
   components: {
     score
-  }
+  },
+  props: ['cover', 'name', 'time']
 }
 </script>
 
 <style lang="scss">
 @import '../../style/mixin.scss';
 .douban_content {
+  .time {
+    line-height:px2rem(20);
+    background:none;
+    color:$gray;
+  }
   img {
     @include wh(px2rem(100),px2rem(130) )
   }
