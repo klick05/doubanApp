@@ -1,0 +1,93 @@
+{
+  "NewBook": {
+    "1": {
+      "name": "失联日记",
+      "cover": "http://img2.imgtn.bdimg.com/it/u=1950980551,1529857322&fm=214&gp=0.jpg",
+      "score": 3.5
+    },
+    "2": {
+      "name": "万物生长",
+      "cover": "http://img4.imgtn.bdimg.com/it/u=2383708061,800908098&fm=214&gp=0.jpg",
+      "score": 6.3
+    },
+    "3": {
+      "name": "碟翅",
+      "cover": "http://img1.imgtn.bdimg.com/it/u=2219890584,3602160323&fm=26&gp=0.jpg",
+      "score": 2.5
+    },
+    "4": {
+      "name": "碟翅",
+      "cover": "http://img4.imgtn.bdimg.com/it/u=3292378097,3379617392&fm=214&gp=0.jpg",
+      "score": 3.4
+    },
+    "5": {
+      "name": "花冷月闲",
+      "cover": "http://a.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=f1454a7fd043ad4ba67b4ec6b2327697/d058ccbf6c81800a31ae3ed4b03533fa838b47a4.jpg",
+      "score": 8.2
+    }
+  },
+  "imaginary": {
+    "1": {
+      "name": "十六夜膳房",
+      "cover": "https://img1.doubanio.com/lpic/s29493608.jpg",
+      "score": 4.6
+    },
+    "2": {
+      "name": "囚鸟",
+      "cover": "https://img3.doubanio.com/lpic/s29474565.jpg",
+      "score": 8
+    },
+    "3": {
+      "name": "深度工作",
+      "cover": "https://img3.doubanio.com/lpic/s29470672.jpg",
+      "score": 6.7
+    },
+    "4": {
+      "name": "幸福课",
+      "cover": "https://img3.doubanio.com/lpic/s29483081.jpg",
+      "score": 5.3
+    },
+    "5": {
+      "name": "克鲁索",
+      "cover": "https://img3.doubanio.com/lpic/s29482692.jpg",
+      "score": 4.1
+    },
+    "6": {
+      "name": "四季有花",
+      "cover": "https://img3.doubanio.com/lpic/s29489982.jpg",
+      "score": 7.3
+    }
+  },
+  "NonEmpty": {
+    "1": {
+      "name": "不可思议图书馆",
+      "cover": "https://img3.doubanio.com/mpic/s29459711.jpg",
+      "score": 6.7
+    },
+    "2": {
+      "name": "可怕的中年（全10册）",
+      "cover": "https://img1.doubanio.com/mpic/s29487688.jpg",
+      "score": 8.1
+    },
+    "3": {
+      "name": "厨艺的赏识",
+      "cover": "https://img3.doubanio.com/mpic/s29435091.jpg",
+      "score": 6.5
+    },
+    "4": {
+      "name": "隐性逻辑",
+      "cover": "https://img3.doubanio.com/mpic/s29460644.jpg",
+      "score": 4.3
+    },
+    "5": {
+      "name": "花朵的秘密生命",
+      "cover": "https://img1.doubanio.com/mpic/s29448068.jpg",
+      "score": 7
+    },
+    "6": {
+      "name": "四季有花",
+      "cover": "https://img3.doubanio.com/lpic/s29489982.jpg",
+      "score": 6.7
+    }
+  }
+}

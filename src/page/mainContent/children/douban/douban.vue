@@ -5,13 +5,16 @@
                 :imgright="require('../../../../assets/imge/ic_chat_green.png')">
     </douban-top>
     <nav class="douban_nav">
-      <router-link class="active" to="/douban/movie">电影</router-link>
-      <router-link to="douban/movie">读书</router-link>
-      <router-link to="douban/tv">电视</router-link>
+      <router-link active-class="active" to="/douban/movie">电影</router-link>
+      <router-link  active-class="active" to="/douban/read">读书</router-link>
+      <router-link to="/douban/tv">电视</router-link>
       <router-link to="douban/city">同城</router-link>
       <router-link to="douban/muisc">音乐</router-link>
     </nav>
-    <router-view></router-view>
+     <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+      <router-view v-if="!$route.meta.keepAlive"></router-view>
   </div>
 </template>
 

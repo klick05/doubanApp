@@ -4,8 +4,8 @@
           <div class="home"></div>
           首页
       </router-link>
-      <router-link active-class="subject_active" to="/douban">
-          <div class="subject"></div>
+      <router-link @click.native="goMovie" active-class="subject_active" to="/douban" >
+          <div  class="subject"></div>
           书影音
       </router-link>
       <router-link active-class="status_active" to="/status">
@@ -24,7 +24,20 @@
 </template>
 
 <script>
-  
+export default {
+  name: 'footer_bar',
+  data () {
+    return {
+
+    }
+  },
+  methods: {
+    goMovie () {
+      this.$router.push('/douban/movie')
+      console.log('123')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

@@ -29,7 +29,7 @@
     <!-- 豆瓣时间 -->
     <douban-time></douban-time>
     <!--一刻-->
-    <Module-one moduleTitle="一刻" green="yes">
+    <module-one moduleTitle="一刻" green="yes">
       <module-item 
         :title="yikeData.title"
         :content="yikeData.content"
@@ -39,7 +39,7 @@
         :key="yikeData.author"
       >
       </module-item>
-    </Module-one>
+    </module-one>
     <!--发现-->
     <find></find>
     <!--为你推荐-->
@@ -60,7 +60,7 @@
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import {getImg, getHot, getYike, gethomRecommend} from '../../../../api/axios.js'
-import ModuleOne from '../../../../components/moduleOne/ModuleOne'
+import moduleOne from '../../../../components/moduleOne/ModuleOne'
 import moduleItem from '../../../../components/moduleOne/moduleItem'
 import doubanTime from './doubanTimer'
 import find from './Find'
@@ -68,7 +68,7 @@ export default {
   components: {
     swiper,
     swiperSlide,
-    ModuleOne,
+    moduleOne,
     moduleItem,
     doubanTime,
     find
