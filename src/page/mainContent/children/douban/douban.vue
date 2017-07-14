@@ -7,7 +7,7 @@
     <nav class="douban_nav">
       <router-link active-class="active" to="/douban/movie">电影</router-link>
       <router-link  active-class="active" to="/douban/read">读书</router-link>
-      <router-link to="/douban/tv">电视</router-link>
+      <router-link active-class="active"  to="/douban/tv">电视</router-link>
       <router-link to="douban/city">同城</router-link>
       <router-link to="douban/muisc">音乐</router-link>
     </nav>

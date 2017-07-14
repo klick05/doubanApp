@@ -1,0 +1,126 @@
+{
+  "todayUp":{
+    "1": {
+      "name": "大军师司马懿之军事联盟",
+      "score": 7.5,
+      "status": "更新至41集/每天更新/优酷视频",
+      "num": 1066,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2468698085.jpg"
+    },
+    "2": {
+      "name": "我的前半生",
+      "score": 7.2,
+      "status": "更新至19集/每天更新/腾讯视频",
+      "num": 4424,
+      "cover": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2478928137.jpg"
+    },
+    "3": {
+      "name": "推理的女王",
+      "score": 7.5,
+      "status": "更新至14集/每天更新/优酷视频",
+      "num": 2157,
+      "cover": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2443896848.jpg"
+    }
+  },
+  "domestic": {
+      "1":{
+      "name": "双世宠妃",
+      "score": 6.2,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2491253270.jpg"
+    },
+    "2":{
+      "name": "秘密森林",
+      "score": 5.2,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2460119184.jpg"
+    },
+    "3":{
+      "name": "楚乔传",
+      "score": 8.6,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2456163175.jpg"
+    },
+    "4":{
+      "name": "三流之路",
+      "score": 9.5,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2457911812.jpg"
+    },
+    "5":{
+      "name": "诸天间道",
+      "cover": "http://pic.58pic.com/58pic/16/46/87/77358PICIMQ_1024.jpg"
+    }
+  },
+    "todayUp":{
+    "1": {
+      "name": "大军师司马懿之军事联盟",
+      "score": 7.5,
+      "status": "更新至41集/每天更新/优酷视频",
+      "num": 1066,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2468698085.jpg"
+    },
+    "2": {
+      "name": "我的前半生",
+      "score": 7.2,
+      "status": "更新至19集/每天更新/腾讯视频",
+      "num": 4424,
+      "cover": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2478928137.jpg"
+    },
+    "3": {
+      "name": "推理的女王",
+      "score": 7.5,
+      "status": "更新至14集/每天更新/优酷视频",
+      "num": 2157,
+      "cover": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2443896848.jpg"
+    }
+  },
+  "Riju": {
+      "1":{
+      "name": "你的名字",
+      "score": 6.2,
+      "cover": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2395733377.jpg"
+    },
+    "2":{
+      "name": "千与千寻",
+      "score": 5.2,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p1910830216.jpg"
+    },
+    "3":{
+      "name": "疾风回旋曲",
+      "score": 8.6,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2352423875.jpg"
+    },
+    "4":{
+      "name": "龙猫",
+      "score": 9.5,
+      "cover": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p1910829638.jpg"
+    },
+    "5":{
+      "name": "哈儿的移动城堡",
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2174346180.jpg"
+    }
+  },
+  "Zongyi": {
+      "1":{
+      "name": "如是",
+      "score": 6.2,
+      "cover": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2461995529.jpg"
+    },
+    "2":{
+      "name": "圆桌派",
+      "score": 5.2,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2390929081.jpg"
+    },
+    "3":{
+      "name": "瓣嘴",
+      "score": 8.6,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2456745436.jpg"
+    },
+    "4":{
+      "name": "奇葩说",
+      "score": 9.5,
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2221154684.jpg"
+    },
+    "5":{
+      "name": "非正式会谈",
+      "cover": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2407680802.jpg"
+    }
+  }
+}

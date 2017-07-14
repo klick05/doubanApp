@@ -2,16 +2,16 @@
   <douban-container title="今日更新" more="">
     <a slot="alink" href="javascript">更多></a>
     <swiper :options="swiperOption">
-      <swiper-slide>
+      <swiper-slide v-for="item in todayTv">
         <div class="todayUp_item">
           <div class="item_left">
-            <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2468698085.jpg" alt="">
+            <img :src="item.cover" alt="">
           </div>
           <div class="item_right">
-            <h3>大军师司马懿只军事联盟</h3>
-            <score score=7.2></score>
-            <p>更新至39集/每天更新/优酷视频</p>
-            <p>10147人想看</p>
+            <h3>{{item.name}}</h3>
+            <score :score="item.score"></score>
+            <p>{{item.status}}</p>
+            <p>{{item.num}}人想看</p>
           </div>
         </div>
       </swiper-slide>
@@ -24,7 +24,7 @@
 import doubanContainer from '../../../../../components/douban/douban_container'
 import score from '../../../../../components/douban/score'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-// import {getImaginary} from '../../../../../api/axios.js'
+import {gettodayUp} from '../../../../../api/axios.js'
 export default {
   components: {
     doubanContainer,
@@ -36,9 +36,18 @@ export default {
     return {
       todayTv: null,
       swiperOption: {
-
+        slidesPerView: 1.1,
+        spaceBetween: 40,
+        freeModeMomentum: false,
+        freeMode: false,
+        slidesOffsetAfter: 20
       }
     }
+  },
+  mounted () {
+    gettodayUp().then(res => {
+      this.todayTv = res.data.todayUp
+    })
   }
 }
 </script>

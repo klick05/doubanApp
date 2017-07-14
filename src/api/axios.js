@@ -16,3 +16,4 @@ export const getfilmItem = () => axios.get('http://localhost:8080/static/json/mo
 export const getdoubanFind = () => axios.get('http://localhost:8080/static/json/movie.json')
 export const getNewBook = () => axios.get('http://localhost:8080/static/json/read.json')
 export const getImaginary = () => axios.get('http://localhost:8080/static/json/read.json')
+export const gettodayUp = () => axios.get('http://localhost:8080/static/json/Tv.json')
