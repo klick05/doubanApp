@@ -8,7 +8,7 @@
           <div  class="subject"></div>
           书影音
       </router-link>
-      <router-link active-class="status_active" to="/status">
+      <router-link active-class="status_active" to="/broadcast">
           <div class="status"></div>
           广播
       </router-link>

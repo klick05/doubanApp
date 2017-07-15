@@ -10,21 +10,45 @@
     </div>
     <hot-activity></hot-activity>
     <doubanContainer title="编辑推荐">
-        
+        <swiper :options="swiperOption">
+          <swiperSlide v-for="item in bjtjData">
+            <img :src="item" alt="">
+          </swiperSlide>
+        </swiper>
     </doubanContainer>
+    <official></official>
   </div>
 </template>
 
 <script>
 import hotActivity from './hotActivity'
+import official from './official'
 import doubanContainer from '../../../../../components/douban/douban_container'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import {getLocal} from '../../../../../api/axios.js'
 export default {
   components: {
     hotActivity,
     doubanContainer,
     swiper,
-    swiperSlide
+    swiperSlide,
+    official
+  },
+  data () {
+    return {
+      swiperOption: {
+        slidesPerView: 2.1,
+        spaceBetween: 0,
+        freeModeMomentum: false,
+        freeMode: false
+      },
+      bjtjData: null
+    }
+  },
+  mounted () {
+    getLocal().then(res => {
+      this.bjtjData = res.data.bjtj
+    })
   }
 }
 </script>
@@ -48,7 +72,7 @@ export default {
       &:after{
         content:'';
         display:block;
-        @include bimg('../../../../../assets/imge/ic_seti_arrow_right_gray.png');
+        background:url('../../../../../assets/imge/ic_seti_arrow_right_gray.png') no-repeat;
         @include wh(px2rem(15), px2rem(20));
         position:absolute;
         top:px2rem(15);
@@ -60,6 +84,12 @@ export default {
     span{
       color: $gray;
     }
+  }
+}
+.local {
+  img {
+    border-radius:px2rem(5);
+    @include wh(px2rem(150),px2rem(150))
   }
 }
 </style>

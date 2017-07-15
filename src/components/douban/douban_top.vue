@@ -23,7 +23,7 @@ export default {
   line-height:px2rem(50);
   text-align:center;
   position:fixed;
-  background: $bjgray;
+  background: #ffffff;
   top:0;
   left:0;
   right:0;

@@ -18,3 +18,4 @@ export const getNewBook = () => axios.get('http://localhost:8080/static/json/rea
 export const getImaginary = () => axios.get('http://localhost:8080/static/json/read.json')
 export const gettodayUp = () => axios.get('http://localhost:8080/static/json/Tv.json')
 export const getLocal = () => axios.get('http://localhost:8080/static/json/activity.json')
+export const getBroad = () => axios.get('http://localhost:8080/static/json/broadcast.json')

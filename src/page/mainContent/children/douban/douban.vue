@@ -8,13 +8,18 @@
       <router-link active-class="active" to="/douban/movie">电影</router-link>
       <router-link  active-class="active" to="/douban/read">读书</router-link>
       <router-link active-class="active"  to="/douban/tv">电视</router-link>
-      <router-link to="/douban/local">同城</router-link>
-      <router-link to="douban/muisc">音乐</router-link>
+      <router-link active-class="active" to="/douban/local">同城</router-link>
+      <router-link active-class="active" to="/douban/music">音乐</router-link>
     </nav>
-     <keep-alive>
-      <router-view v-if="$route.meta.keepAlive"></router-view>
-    </keep-alive>
-      <router-view v-if="!$route.meta.keepAlive"></router-view>
+    <transition name="main">
+        <keep-alive>
+          <router-view v-if="$route.meta.keepAlive"></router-view>
+        </keep-alive>
+    </transition>
+
+    <transition name="main">
+          <router-view v-if="!$route.meta.keepAlive"></router-view>
+    </transition>
   </div>
 </template>
 
@@ -63,6 +68,12 @@ export default {
     border-bottom:px2rem(2) solid $green;
     color:$green;
   }
+}
+.main-enter-active, .main-leave-active {
+  transition: opacity .3s;
+}
+.main-enter, .main-leave-active {
+  opacity: 0;
 }
 </style>
 

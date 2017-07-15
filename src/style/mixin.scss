@@ -26,6 +26,7 @@ $baseFontSize: 75;
 @mixin bimg($url) {
   background: url($url);
   background-repeat: no-repeat;
+  background-size:100%;
 }
 
 @mixin Omitted($num) {

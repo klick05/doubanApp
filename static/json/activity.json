@@ -31,5 +31,43 @@
       "ticket": "官方售票",
       "date": "2017-07-08"
     }
+  },
+  "bjtj": [
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/huodong/1.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/huodong/2.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/huodong/3.jpg?raw=true",
+    "https://github.com/XiaoKe0402/doubanApp/blob/master/src/assets/imge/banner/huodong/4.jpg?raw=true"
+  ],
+  "official": {
+    "1":{
+       "cover": "https://img3.doubanio.com/view/event_poster/median/public/4dc475ff1e2df81.jpg",
+      "name": "鸟巢·米开朗基罗国际艺术展",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    },
+    "2":{
+       "cover": "https://img1.doubanio.com/view/event_poster/median/public/6f121e87436c0aa.jpg",
+      "name": "阿加莎·克里斯蒂经典悬疑剧《无人生还》北京站",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    },
+     "3":{
+       "cover": "https://img1.doubanio.com/view/event_poster/median/public/326653396c7c79a.jpg",
+      "name": "2017第七届林兆华戏剧邀请展--德国邵宾纳剧院《玛利亚的婚后生活》",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    },
+      "4":{
+       "cover": "https://img3.doubanio.com/view/event_poster/median/public/4252484bae32e04.jpg",
+      "name": "英国原版音乐剧《保镖》THE BODYGUARD THE MUSICAL",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    },
+      "5":{
+       "cover": "https://img3.doubanio.com/view/event_poster/median/public/fcebba1c83ad5dd.jpg",
+      "name": "《维也纳之声》—2018北京新年音乐会",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    }
   }
 }
