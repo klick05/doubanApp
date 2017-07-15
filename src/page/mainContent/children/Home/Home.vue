@@ -15,7 +15,7 @@
       </swiper>
     </div>
     <!-- 热点 -->
-    <Module-one moduleTitle="热点" orange="yes">
+    <module-one moduleTitle="热点" orange="yes">
       <module-item v-for="(item, index) in hotData" 
                :title="item.title"
                :content="item.content"
@@ -25,7 +25,7 @@
                :key="index"
                >
       </module-item>
-    </Module-one>
+    </module-one>
     <!-- 豆瓣时间 -->
     <douban-time></douban-time>
     <!--一刻-->
@@ -43,7 +43,7 @@
     <!--发现-->
     <find></find>
     <!--为你推荐-->
-    <Module-one moduleTitle="为你推荐" green="yes">
+    <module-one moduleTitle="为你推荐" green="yes">
       <module-item v-for="(item, index) in recommendData" 
                :title="item.title"
                :content="item.content"
@@ -53,7 +53,7 @@
                :key="index"
                >
       </module-item>
-    </Module-one>
+    </module-one>
   </div>
 </template>
 

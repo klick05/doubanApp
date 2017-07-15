@@ -1,0 +1,35 @@
+{
+  "hotA":{
+    "1": {
+      "cover": "https://img3.doubanio.com/view/event_poster/large/public/2524e1422249d9d.jpg",
+      "name":"【北京站】勒东出品，陈数主，易卜生原著话剧",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    },
+     "2": {
+      "cover": "https://img3.doubanio.com/view/event_poster/large/public/6dfa8c7aefb1041.jpg",
+      "name": "双人展|你不是一个人跟世界单挑",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+      
+    },
+     "3": {
+      "cover": "https://img1.doubanio.com/view/event_poster/large/public/8c02ca96fe6c2e7.jpg",
+      "name": "北京戏剧院两周年庆演出：新制作莎士比亚",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    },
+     "4": {
+      "cover": "https://img3.doubanio.com/view/event_poster/large/public/b3706fb69eeac4e.jpg",
+      "name": "根据曹禺经典小说改编大型原创编剧",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    },
+     "5": {
+      "cover": "https://img1.doubanio.com/view/event_poster/large/public/f6be6948f7a813c.jpg",
+      "name": "【戏剧游戏】《白兔子，红兔子",
+      "ticket": "官方售票",
+      "date": "2017-07-08"
+    }
+  }
+}

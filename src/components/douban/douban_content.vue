@@ -4,6 +4,7 @@
     <img :src="cover" alt="">
     <h4>{{name}}</h4>
     <slot></slot>
+    <div v-if="ticket" class="ticket">{{ticket}}</div>
   </div>
 </template>
 
@@ -13,7 +14,7 @@ export default {
   components: {
     score
   },
-  props: ['cover', 'name', 'time']
+  props: ['cover', 'name', 'time', 'ticket']
 }
 </script>
 
@@ -38,6 +39,15 @@ export default {
   p {
     color: $gray;
     font-size: px2rem(12);
+  }
+  .ticket {
+    border:1px solid #ff0066;
+    @include wh(px2rem(50),px2rem(15))
+    border-radius:px2rem(2);
+    font-size:px2rem(10);
+    color:#ff0066;
+    text-align:center;
+    margin-top:px2rem(5);
   }
 }
 </style>

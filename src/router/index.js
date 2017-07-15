@@ -6,6 +6,7 @@ const Home = r => require.ensure([], () => r(require('../page/mainContent/childr
 const movie = r => require.ensure([], () => r(require('../page/mainContent/children/douban/movie/movie.vue')), 'movie')
 const read = r => require.ensure([], () => r(require('../page/mainContent/children/douban/Read/Read.vue')), 'read')
 const tv = r => require.ensure([], () => r(require('../page/mainContent/children/douban/Tv/TV.vue')), 'tv')
+const local = r => require.ensure([], () => r(require('../page/mainContent/children/douban/local/local.vue')), 'local')
 Vue.use(Router)
 
 export default new Router({
@@ -38,6 +39,11 @@ export default new Router({
             {
               path: 'tv',
               component: tv,
+              mata: { keepAlive: true }
+            },
+            {
+              path: 'local',
+              component: local,
               mata: { keepAlive: true }
             }
           ]
