@@ -2,8 +2,8 @@
 <div>
     <div class="public_top">
       <h2>{{title}}</h2>
-      <img class="img_left" :src="imgleft" alt="">
-      <img class="img_right":src="imgright" alt="">
+      <img v-if="imgleft"class="img_left" :src="imgleft" alt="">
+      <img v-if="imgright" class="img_right":src="imgright" alt="">
     </div>
 </div>
 </template>

@@ -16,7 +16,7 @@
           <div class="group"></div>
           小组
       </router-link>
-      <router-link active-class="profil_active" to="/profil">
+      <router-link active-class="profil_active" to="/main">
           <div class="profil"></div>
           我的
       </router-link>

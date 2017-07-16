@@ -20,6 +20,10 @@
                 :msg="item.msg"
                 :index="index"
                 v-on:close="closeItem"></broadItem>
+    <footer-refresh>
+      <div slot="selected" class="change_selected">选好了去玩广播</div>
+      <span slot="skip" class="change_skip">跳过</span>
+    </footer-refresh>
   </div>
 </template>
 
@@ -27,10 +31,12 @@
 import doubanTop from '../../../../components/douban/douban_top'
 import {getBroad} from '../../../../api/axios.js'
 import broadItem from './broadcast_item'
+import footerRefresh from '../../../../components/footerRefresh'
 export default {
   components: {
     doubanTop,
-    broadItem
+    broadItem,
+    footerRefresh
   },
   data () {
     return {
@@ -75,5 +81,8 @@ export default {
       color: $gray;
     }
   }
+}
+.change_selected {
+  right:px2rem(60);
 }
 </style>

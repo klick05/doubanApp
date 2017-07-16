@@ -8,7 +8,11 @@ $baseFontSize: 75;
   font-size:$size;
   color:$color
 }
-
+@mixin cz {
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
 @mixin wh($w,$h) {
   width: $h;
   height: $h;

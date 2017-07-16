@@ -51,7 +51,7 @@ export default {
     width:95%;
     margin: auto;
     border-radius:px2rem(2);
-    box-shadow:px2rem(0) px2rem(1) px2rem(2) #878686;
+    box-shadow:px2rem(1) px2rem(1) px2rem(2) #878686;
     padding:px2rem(30) px2rem(20) px2rem(20) px2rem(10);
     position:relative;
     margin-top:px2rem(20);

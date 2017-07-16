@@ -31,20 +31,25 @@
     "msg": 12,
     "portrait": "http://www.sfs-cn.com/node3/node924/node22127/node22128/images/00179559.jpg"
   },
-   {
-    "name": "Jangdata",
+  {
+    "name": "远子",
     "num": 16490,
-    "content": "转眼的时间划过一世的流年<br/>LorenzoCastore",
+    "content": "一切神经病搬的变来变去都让我不舒服。这不是我喜欢的。甚至是是新闻也都然我紧张。我更喜欢旧新闻。所有的新闻都很糟糕.",
+    "like": 45,
+    "msg": 12,
+    "portrait": "http://diy.qqjay.com/u/files/2012/0209/2f45e7e0d06a69a974949c0872a5ec5a.jpg"
+  },
+  {
+    "name": "落叶村",
+    "num": 16490,
+    "content": "真是美好的一天",
     "imgData":[
-      "https://img1.doubanio.com/lpic/s29493608.jpg",
-      "https://img1.doubanio.com/lpic/s29493608.jpg",
-      "https://img1.doubanio.com/lpic/s29493608.jpg",
-      "https://img1.doubanio.com/lpic/s29493608.jpg",
-      "https://img1.doubanio.com/lpic/s29493608.jpg",
-      "https://img1.doubanio.com/lpic/s29493608.jpg"
+      "http://img0.imgtn.bdimg.com/it/u=956118628,2441852186&fm=200&gp=0.jpg",
+      "http://img1.imgtn.bdimg.com/it/u=414195503,420343436&fm=26&gp=0.jpg",
+      "http://img4.imgtn.bdimg.com/it/u=773671843,970242693&fm=26&gp=0.jpg"
     ],
     "like": 45,
     "msg": 12,
-    "portrait": "http://www.sfs-cn.com/node3/node924/node22127/node22128/images/00179559.jpg"
+    "portrait": "http://diy.qqjay.com/u/files/2014/0914/1d8be76e378f93e07693504f0ea20d07.jpg"
   }
 ]
