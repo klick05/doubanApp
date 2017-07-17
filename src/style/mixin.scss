@@ -13,6 +13,11 @@ $baseFontSize: 75;
   top:50%;
   transform: translateY(-50%);
 }
+@mixin sz {
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
 @mixin wh($w,$h) {
   width: $h;
   height: $h;

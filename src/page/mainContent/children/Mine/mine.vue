@@ -4,10 +4,24 @@
                 title="我的">
     </douban-top>
     <div class="mine_login">
-      <img class="mine_portrait" src="../../../../assets/imge/ic_user_male.png" alt="">
-      <div class="long_register">
-        登入/注册
-      </div>
+      <img v-if="!login" border="0" class="mine_portrait" src="../../../../assets/imge/ic_user_male.png" alt="">
+      <img v-if="login" border="0" class="mine_portrait" :src="use.img" alt="">
+      <router-link to="/login">
+        <div v-if="!login"  class="long_register">
+          登入/注册
+        </div>
+      </router-link>
+      <section v-if="login" class="login_after">
+        <h2>{{use.name}}</h2>
+        <div class="user_msg">
+          <span>ID:{{use.id}}</span>
+          <router-link to="/ge">个人主页</router-link>
+        </div>
+        <div class="follow">
+          <span>关注0 </span>
+          <span>被关注0</span>
+        </div>
+      </section>
     </div>
 
     <div class="remind">
@@ -20,14 +34,84 @@
         <p>暂无新提醒</p>
       </div>
     </div>
+
+    <div class="mine_menu">
+      <table>
+        <tr>
+            <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_photo_liked.png" alt="">
+              <p>喜欢</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_note.png" alt="">
+              <p>日记</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_album.png" alt="">
+              <p>相册</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_status.png" alt="">
+              <p>我的广播</p>
+            </router-link>
+        </tr>
+        <tr>
+            <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_movies_tvs.png" alt="">
+              <p>电影·电视</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_books.png" alt="">
+              <p>读书</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_music.png" alt="">
+              <p>音乐</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_events.png" alt="">
+              <p>同城活动</p>
+            </router-link>
+        </tr>
+        <tr>
+            <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/dbtime.png" alt="">
+              <p>豆瓣时间</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_doulist.png" alt="">
+              <p>豆列</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_orders.png" alt="">
+              <p>订单</p>
+            </router-link>
+             <router-link tag="td" to="minelike">
+              <img src="../../../../assets/imge/ic_my_wallet.png" alt="">
+              <p>钱包</p>
+            </router-link>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
 <script>
 import doubanTop from '../../../../components/douban/douban_top'
+import {mapState} from 'vuex'
 export default {
   components: {
     doubanTop
+  },
+  data () {
+    return {
+    }
+  },
+  computed: {
+    ...mapState([
+      'login',
+      'use'
+    ])
   }
 }
 </script>
@@ -42,9 +126,10 @@ export default {
     @include bimg('../../../../assets/login.jpg');
     @include wh(100%, px2rem(100));
     position:relative;
+    overflow:hidden;
     .mine_portrait {
       @include wh(px2rem(60),px2rem(60));
-      border:2px solid $bj;
+      border:px2rem(2) solid $bj;
       border-radius:50%;
       @include cz;
       left:px2rem(30);
@@ -60,6 +145,48 @@ export default {
       @include cz;
       letter-spacing:px2rem(2);
       right:px2rem(40);
+    }
+    // 登入后的用户信息展示
+    .login_after {
+      @include cz;
+      left:px2rem(110);
+      width:100%;
+      h2 {
+        color:$bj;
+        font-weight:700;
+        letter-spacing:px2rem(1);
+      }
+      .user_msg {
+        border-bottom:px2rem(1) solid #ffffff;
+        padding:0 0 px2rem(10) 0;
+        margin:px2rem(5) 0;
+        span {
+          color:$bj;
+        }
+        a {
+          position:absolute;
+          left:px2rem(200);
+          color:$bj;
+          &:after {
+            content:'';
+            display:inline-block;
+            @include wh(px2rem(12),px2rem(15));
+            @include bimg('../../../../assets/imge/whitejt.png');
+            position:relative;
+            top:px2rem(4);
+            left:px2rem(2);
+          }
+        }
+      }
+      .follow {
+        span {
+          color:$bj;
+          letter-spacing:px2rem(2);
+        span:nth-of-type(2) {
+          position:relative;
+        }
+        }
+      }
     }
   }
   // 提醒
@@ -98,6 +225,26 @@ export default {
       line-height:px2rem(50);
       p {
         color: $gray;
+      }
+    }
+  }
+  // 菜单栏
+  .mine_menu {
+    margin-top:px2rem(10);
+    background: $bj;
+    table {
+      width:100%;
+      text-align:center;
+      border-collapse:collapse;
+      tr {
+        height:px2rem(100);
+        img {
+          @include wh(px2rem(35),px2rem(35))
+        }
+      }
+      tr:nth-of-type(2) {
+        border-top:1px solid #ececec;
+        border-bottom:1px solid #ececec;
       }
     }
   }
