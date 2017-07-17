@@ -1,11 +1,11 @@
 <template>
   <div class="mainContent">
-  <transition name="main">
+  <transition name="main" out-in>
     <keep-alive>
       <router-view v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
   </transition>
-  <transition name="main">
+  <transition name="main" out-in>
       <router-view v-if="!$route.meta.keepAlive"></router-view>
     </transition>
     <footer-bar></footer-bar>

@@ -4,6 +4,7 @@
       <div class="searchBar">
         <p>影视 图书 唱片 小组等</p>
       </div>
+      <img @click="login" src="../../../../assets/imge/login.png" alt="">
     </div>
 
     <div class="banner">
@@ -85,6 +86,11 @@ export default {
       recommendData: null
     }
   },
+  computed: {
+    loginState () {
+      return this.$store.state.login
+    }
+  },
   mounted () {
     getImg().then(res => {
       this.imgData = res.data.imgData
@@ -100,8 +106,8 @@ export default {
     })
   },
   methods: {
-    show () {
-      console.log(this.yikeData)
+    login () {
+      this.loginState ? '' : this.$router.push('/login')
     }
   }
 }
@@ -120,6 +126,12 @@ export default {
     left:0;
     right:0;
     z-index:100;
+    img {
+      @include wh(px2rem(25), px2rem(25))
+      position:absolute;
+      right:px2rem(10);
+      top:px2rem(15);
+    }
     .searchBar {
       @include wh(px2rem(320),px2rem(30));
       background: $bj;
@@ -127,15 +139,15 @@ export default {
       position: absolute;
       bottom:px2rem(6);
       left:px2rem(6);
-      &:before {
-          content: '';
-          display:inline-block;
-          position:absolute;
-          right:px2rem(-35);
-          top:px2rem(4);
-          @include wh(px2rem(25),px2rem(25));
-          @include bimg('../../../../assets/imge/login.png');
-        }
+      // &:before {
+      //     content: '';
+      //     display:inline-block;
+      //     position:absolute;
+      //     right:px2rem(-35);
+      //     top:px2rem(4);
+      //     @include wh(px2rem(25),px2rem(25));
+      //     @include bimg('../../../../assets/imge/login.png');
+      //   }
       p {
         position:fixed;
         text-indent: px2rem(30);

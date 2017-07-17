@@ -1,6 +1,7 @@
 <template>
   <div class="broadcast">
     <doubanTop title="推荐广播"
+                v-on:active="login"
                :imgleft="require('../../../../assets/imge/ic_status_search_user.png')" 
                :imgright="require('../../../../assets/imge/ic_chat_green.png')"
     ></doubanTop>
@@ -43,6 +44,11 @@ export default {
       broadData: null
     }
   },
+  computed: {
+    loginState () {
+      return this.$store.state.login
+    }
+  },
   mounted () {
     getBroad().then(res => {
       this.broadData = res.data
@@ -51,6 +57,9 @@ export default {
   methods: {
     closeItem (msg) {
       this.broadData.splice(msg, 1)
+    },
+    login () {
+      this.$store.state.login ? '' : this.$router.push('/login')
     }
   }
 }

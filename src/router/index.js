@@ -4,6 +4,7 @@ import mainContent from '../page/mainContent/MainContent.vue'
 const douban = r => require.ensure([], () => r(require('../page/mainContent/children/douban/douban.vue')), 'group-foo')
 const login = r => require.ensure([], () => r(require('../page/Login/login.vue')), 'login')
 const Home = r => require.ensure([], () => r(require('../page/mainContent/children/Home/Home.vue')), 'home')
+const Group = r => require.ensure([], () => r(require('../page/mainContent/children/group/group.vue')), 'Group')
 const broadcast = r => require.ensure([], () => r(require('../page/mainContent/children/broadcast/broadcast.vue')), 'broadcast')
 const main = r => require.ensure([], () => r(require('../page/mainContent/children/Mine/mine.vue')), 'broadcast')
 const movie = r => require.ensure([], () => r(require('../page/mainContent/children/douban/movie/movie.vue')), 'movie')
@@ -65,6 +66,11 @@ export default new Router({
         {
           path: 'main',
           component: main,
+          meta: { keepAlive: true }
+        },
+        {
+          path: 'Group',
+          component: Group,
           meta: { keepAlive: true }
         }
       ]

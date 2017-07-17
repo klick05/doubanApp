@@ -3,7 +3,7 @@
     <div class="public_top">
       <h2>{{title}}</h2>
       <img v-if="imgleft"class="img_left" :src="imgleft" alt="">
-      <img v-if="imgright" class="img_right":src="imgright" alt="">
+      <img v-if="imgright" @click="active" class="img_right":src="imgright" alt="">
     </div>
 </div>
 </template>
@@ -11,7 +11,12 @@
 <script>
 export default {
   props: ['title', 'imgleft', 'imgright'],
-  name: 'public_top'
+  name: 'public_top',
+  methods: {
+    active () {
+      this.$emit('active')
+    }
+  }
 }
 </script>
 

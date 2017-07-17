@@ -1,6 +1,7 @@
 <template>
   <div class="douban">
     <douban-top title="书影音"
+                v-on:active="login"
                 :imgleft="require('../../../../assets/imge/ic_group_search.png')"
                 :imgright="require('../../../../assets/imge/ic_chat_green.png')">
     </douban-top>
@@ -11,13 +12,13 @@
       <router-link active-class="active" to="/douban/local">同城</router-link>
       <router-link active-class="active" to="/douban/music">音乐</router-link>
     </nav>
-    <transition name="main">
+    <transition name="main" out-in>
         <keep-alive>
           <router-view v-if="$route.meta.keepAlive"></router-view>
         </keep-alive>
     </transition>
 
-    <transition name="main">
+    <transition name="main" out-in>
           <router-view v-if="!$route.meta.keepAlive"></router-view>
     </transition>
   </div>
@@ -29,8 +30,14 @@ export default {
   components: {
     doubanTop
   },
-  data () {
-    return {
+  computed: {
+    loginState () {
+      return this.$store.login
+    }
+  },
+  methods: {
+    login () {
+      this.$store.login ? '' : this.$router.push('/login')
     }
   }
 }
