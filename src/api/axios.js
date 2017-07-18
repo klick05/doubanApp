@@ -19,3 +19,5 @@ export const getImaginary = () => axios.get('http://localhost:8080/static/json/r
 export const gettodayUp = () => axios.get('http://localhost:8080/static/json/Tv.json')
 export const getLocal = () => axios.get('http://localhost:8080/static/json/activity.json')
 export const getBroad = () => axios.get('http://localhost:8080/static/json/broadcast.json')
+export const getGroup = () => axios.get('http://localhost:8080/static/json/group.json')
+export const getSearch = () => axios.get('http://localhost:8080/static/json/serach.json')

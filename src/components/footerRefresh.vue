@@ -46,6 +46,9 @@
       top:px2rem(12);
       border-radius:px2rem(3);
     }
+    .selectedOK {
+      background:$green;
+    }
     .change_skip {
       position:absolute;
       right:px2rem(20);

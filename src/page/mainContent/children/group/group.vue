@@ -8,81 +8,138 @@
     <section class="group_title">
       <div class="titile_content">
         <h2>420646个有趣的小组</h2>
-        <p>立即选择加入吧！</p>
+        <p>立即选择加入吧</p>
       </div>
       <span class="title_footer">根据兴趣推荐</span>
     </section>
 
     <div class="gropu_content">
-      <div class="movie">
-        <div class="group_banner">
-          <img src="../../../../assets/imge/ic_rec_group_banner_1.png" alt="">
-          <span>书影音</span>
-        </div>
-        <div class="group_content_title">
-          <span></span>
-          <h3>影视</h3>
-          <span></span>
-        </div>
-        <div class="content_item">
-          <img src="http://up.th38.net/uploads/allimg/160614/1155163T5-9.jpg" alt="">
-          <div class="group_msg">
-            <h3>啊就是领导就</h3>
-            <p>asfasfsafsfsffds</p>
-          </div>
-          <div class="groupSelect">
-            11401人
-          </div>
-        </div>
-      </div>
+      <content-wrap type="书影音" 
+                    :banner="require('../../../../assets/imge/ic_rec_group_banner_1.png')"
+      >
+        <content-title title="影视">
+          <group-item v-for="(item, index) in gMovie" 
+                      :name="item.name" 
+                      :cover="item.cover" 
+                      :num="item.num" 
+                      :describe="item.describe"
+                      :data="item"
+                      v-on:add="addGroup"
+                      v-on:reduce="reTotal">
+          </group-item>
+        </content-title>
+      </content-wrap>
+
+       <content-wrap type="精选推荐" 
+                    :banner="require('../../../../assets/imge/ic_rec_group_banner_2.png')"
+      >
+        <content-title title="读书">
+           <group-item v-for="(item, index) in gRead" 
+                      :name="item.name" 
+                      :cover="item.cover" 
+                      :num="item.num" 
+                      :describe="item.describe"
+                      :data="item"
+                      v-on:add="addGroup"
+                      v-on:reduce="reTotal">
+                     
+          </group-item>
+        </content-title>
+
+        <content-title title="音乐">
+           <group-item v-for="(item, index) in gMuisc" 
+                      :name="item.name" 
+                      :cover="item.cover" 
+                      :num="item.num" 
+                      :describe="item.describe"
+                      :data="item"
+                      v-on:add="addGroup"
+                      v-on:reduce="reTotal">
+          </group-item>
+        </content-title>
+
+        <content-title title="同城">
+           <group-item v-for="(item, index) in gCity" 
+                      :name="item.name" 
+                      :cover="item.cover" 
+                      :num="item.num" 
+                      :describe="item.describe"
+                      :data="item"
+                      v-on:add="addGroup"
+                      v-on:reduce="reTotal">
+          </group-item>
+        </content-title>
+      </content-wrap>
     </div>
+
+    <footer-refresh>
+            <div slot="selected" :class="{selectedOK : selectOK}" class="change_selected">选好了，进入小组</div>
+    </footer-refresh>
   </div>
 </template>
 
 <script>
 import doubanTop from '../../../../components/douban/douban_top'
+import contentWrap from './content_wrap'
+import contentTitle from './content_title'
+import groupItem from './group_item'
+import {getGroup} from '../../../../api/axios.js'
+import footerRefresh from '../../../../components/footerRefresh'
 export default {
   components: {
-    doubanTop
+    doubanTop,
+    contentWrap,
+    contentTitle,
+    groupItem,
+    footerRefresh
+  },
+  data () {
+    return {
+      gRead: null,
+      gMuisc: null,
+      gCity: null,
+      gMovie: null,
+      Total: []
+    }
+  },
+  mounted () {
+    getGroup().then(res => {
+      this.gRead = res.data.readbook
+      this.gMuisc = res.data.muisc
+      this.gCity = res.data.city
+      this.gMovie = res.data.movie
+    })
+  },
+  methods: {
+    addGroup (item) {
+      this.Total.push(item)
+    },
+    reTotal (msg) {
+      for (let i = 0; i < this.Total.length; i++) {
+        if (this.Total[i].name === msg) {
+          this.Total.splice(i, 1)
+        }
+      }
+    }
+  },
+  computed: {
+    selectOK () {
+      if (this.Total.length > 0) {
+        return true
+      } else {
+        return false
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../../../../style/mixin.scss';
+.change_selected {
+  right:px2rem(10);
+}
 .Group {
-
-  .content_item {
-    @include wh(100%, px2rem(50));
-    margin-top:px2rem(10);
-    img {
-      @include wh(px2rem(50),px2rem(50));
-      border-radius:px2rem(2);
-      float:left;
-    }
-    .group_msg {
-      width:px2rem(200);
-      float:left;
-      height:100%;
-      margin-left:px2rem(6);
-    }
-    .groupSelect {
-      color: $gray;
-      float:right;
-      @include wh(px2rem(90),100%);
-      line-height:px2rem(50);
-      background:url('../../../../assets/imge/ic_group_check_anonymous.png') no-repeat;
-      background-size:px2rem(25);
-      background-position:px2rem(60) px2rem(12);
-      &.checked {
-         @include wh(px2rem(90),100%);
-        line-height:px2rem(50);
-        background:url('../../../../assets/imge/ic_group_checked_anonymous.png') no-repeat;
-        background-size:px2rem(25);
-        background-position:px2rem(60) px2rem(12);
-      }
-    }
-  }
   padding:px2rem(50) 0 px2rem(100) 0;
   .group_title {
     @include bimg('../../../../assets/imge/ic_group_banner - 副本.png');
@@ -109,36 +166,6 @@ export default {
   }
   .gropu_content {
     background:$bjgray;
-    .movie {
-      background:$bj;
-      padding:0 px2rem(10);
-    }
-    .group_banner {
-      position:relative;
-      img {
-        @include wh(100%,px2rem(80));
-      }
-      span {
-        position:absolute;
-        left:px2rem(10);
-        bottom:px2rem(15);
-        color:$bj;
-      }
-    }
-    .group_content_title {
-      @include flex;
-      align-items:center;
-      h3 {
-        width:px2rem(100);
-        margin:auto;
-        text-align:center;
-      }
-      span {
-        display:inline-block;
-        @include wh(px2rem(150),px2rem(0.5));
-        background: $gray;
-      }
-    }
   }
 }
 </style>

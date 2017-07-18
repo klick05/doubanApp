@@ -1,5 +1,5 @@
 <template>
-  <div class="Login">
+  <div class="Login" @click="$router.go(-1)">
     <span class="BackOff"></span>
       <h2 class="Login_title">欢迎来到豆瓣</h2>
       <form id="LoginFrom">

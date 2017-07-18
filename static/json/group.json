@@ -1,0 +1,82 @@
+{
+  "readbook":[
+    {
+      "cover": "http://img4.imgtn.bdimg.com/it/u=3623908199,269668883&fm=26&gp=0.jpg",
+      "name": "哈雷波特和柯南迷",
+      "describe": "喜欢哈利？喜欢柯南？啊哈！你找对地方了！~很惊讶居然会有这么多人加入",
+      "num": 8464
+    },
+    {
+      "cover": "https://img3.doubanio.com/icon/g10241-20.jpg",
+      "name": "《读书》",
+      "describe": "在今天的环境中，哗众取宠很容易，讨好这样那样的势力很容易，趣味向下滑落很容易，但要坚持自己的思想格调反而是件很难的事情",
+      "num": 70761
+    },
+    {
+      "cover": "https://img3.doubanio.com/icon/g272084-4.jpg",
+      "name": "星星读书团，每周一本书",
+      "describe": "本小组模式： 本小组宗旨：强迫在物欲横流的年月里来读书 推荐书目：好书、坏书、垃圾书、畅销书，都可以读，只要读书，就有希望，不一定要读大部头！ 具体要",
+      "num": 70761
+    }
+  ],
+  "movie": [
+    {
+      "cover": "https://img1.doubanio.com/icon/g248952-7.jpg",
+      "name": "八卦来了",
+      "describe": "各类八卦讨论组【本组主打娱乐八卦，注意是 娱！乐！八！卦！】 对小组有任何不满、意见和建议都请向组长砸来！（请豆邮组长或管理员！有紧要事务务必发送邮件至bagual",
+      "num": 606558
+    },
+    {
+      "cover": "https://img3.doubanio.com/icon/g92409-3.jpg",
+      "name": "中国影视编剧",
+      "describe": "版规和导读 注意：版规细则 1、严禁违反国家法律法规。 2、严禁宣扬邪教和封建迷信。 3、严禁散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪。 4、禁止在灌水吧以外版",
+      "num": 70761
+    },
+    {
+      "cover": "https://img3.doubanio.com/icon/g325846-6.jpg",
+      "name": "PT邀请与影视交流",
+      "describe": "一、PT 国内&国外 1）CHDBits，HDWing，TorrenTGui，HDStar，HDRoad 2）SceneHD，HDB，FTN，Bitme，PTN，SCC，x264 PT的世界来也匆匆、去也匆匆，曾经熟悉的站点不",
+      "num": 70761
+    }
+  ],
+  "muisc": [
+    {
+      "cover": "https://img3.doubanio.com/icon/g68581-26.jpg",
+      "name": "不听音乐我会死",
+      "describe": "我可以忍住很多事不去做，但是就是不能忍住不听音乐。音乐已经成了自己的一部分。 特推友情小组“不听摇滚我会死” http://www.douban.com/group/390364/",
+      "num": 606558
+    },
+    {
+      "cover": "https://img3.doubanio.com/icon/g596378-3.jpg",
+      "name": "听音乐-豆瓣小事",
+      "describe": "我们弘扬一切美的旋律，我们批判一切傻逼歌曲 豆瓣小事已于2017年3月27日停止服务。所有发表于听音乐小事的话题和回应，现已备份至本小组",
+      "num": 70761
+    },
+    {
+      "cover": "https://img3.doubanio.com/icon/g69400-2.jpg",
+      "name": "欧美流行音乐",
+      "describe": "花花世界太费眼睛，听歌吧",
+      "num": 70761
+    }
+  ],
+  "city": [
+    {
+      "cover": "https://img3.doubanio.com/icon/g558980-4.jpg",
+      "name": "上海同城单身交友聚会活动群",
+      "describe": "我可以忍住很多事不去做，但是就是不能忍住不听音乐。音乐已经成了自己的一部分。 特推友情小组“不听摇滚我会死” http://www.douban.com/group/390364/",
+      "num": 606558
+    },
+    {
+      "cover": "https://img3.doubanio.com/icon/g141818-20.jpg",
+      "name": "❤同城约会❤",
+      "describe": "为喜欢活动的朋友搭建平台，交流活动信息，组织活动。欢迎你加入上海同城活动小组！ 发布活动的朋友顺带链上同城活动的地址~ 置顶帖条件： 1.活动帖，并在帖中附...",
+      "num": 70761
+    },
+    {
+      "cover": "https://img3.doubanio.com/icon/g357073-14.jpg",
+      "name": "北京豆瓣同城",
+      "describe": "蒸考研友、票友、球友、摄友，蒸同道、同行、同门，蒸影迷，乐迷，书迷，在北京同城小组里应有尽有，欢迎你找到志同道合的小伙伴一起玩耍啊！ 1.博物馆，看各种主...",
+      "num": 70761
+    }
+  ]
+}
