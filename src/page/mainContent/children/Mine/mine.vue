@@ -1,6 +1,6 @@
 <template>
   <div class="mine">
-    <douban-top :imgright="require('../../../../assets/imge/ic_settings.png')"
+    <douban-top v-on:active="outLogin" :imgright="require('../../../../assets/imge/out.png')"
                 title="我的">
     </douban-top>
     <div class="mine_login">
@@ -112,6 +112,11 @@ export default {
       'login',
       'use'
     ])
+  },
+  methods: {
+    outLogin () {
+      this.$store.commit('USE_OUT')
+    }
   }
 }
 </script>

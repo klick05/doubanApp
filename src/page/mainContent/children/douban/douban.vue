@@ -12,13 +12,13 @@
       <router-link active-class="active" to="/douban/local">同城</router-link>
       <router-link active-class="active" to="/douban/music">音乐</router-link>
     </nav>
-    <transition name="main" out-in>
+    <transition name="douban" out-in>
         <keep-alive>
           <router-view v-if="$route.meta.keepAlive"></router-view>
         </keep-alive>
     </transition>
 
-    <transition name="main" out-in>
+    <transition name="douban" out-in>
           <router-view v-if="!$route.meta.keepAlive"></router-view>
     </transition>
   </div>
@@ -76,10 +76,10 @@ export default {
     color:$green;
   }
 }
-.main-enter-active, .main-leave-active {
-  transition: opacity .3s;
+.douban-enter-active, .douban-leave-active {
+  transition: opacity .5s;
 }
-.main-enter, .main-leave-active {
+.douban-enter, .douban-leave-active {
   opacity: 0;
 }
 </style>

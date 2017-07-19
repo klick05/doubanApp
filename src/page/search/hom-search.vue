@@ -2,10 +2,10 @@
   <div class="HomeSearch">
     <div class="top">
       <div class="SearchBox">
-        <span class="s_type">{{searchBar}}</span>
-        <input type="text" placeholder="搜索" autofocus="autofocus">
+        <span @click="openStype" class="s_type">{{searchBar}}</span>
+        <input type="text" :placeholder="'搜索'+searchBar" autofocus="autofocus">
       </div>
-      <span class="cancel">取消</span>
+      <span class="cancel" @click="$router.go(-1)">取消</span>
     </div>
     <div class="HotSearch">
       热门搜索
@@ -16,36 +16,25 @@
                     :type="item.type"
     ></search-content>
     <!--搜索菜单类型-->
-  <transition name="searchBar">
-    <div v-if="true" class="typeBar">
-      <ul>
-        <li @input="sb(value)">全部</li>
-        <li @input="sb(valueL)">电影/电视</li>
-        <li>图书</li>
-        <li>唱片</li>
-        <li>用户</li>
-        <li>小组</li>
-        <li>群聊</li>
-        <li>游戏/应用</li>
-        <li>同城</li>
-        <li>舞台剧</li>
-      </ul>
-    </div>
-    </transition>
+    <search-bar v-on:close="Close" :Switch="Switch" :type="searchBar" v-on:activetype="seletcted"></search-bar>
   </div>
 </template>
 
 <script>
   import {getSearch} from '../../api/axios.js'
   import searchContent from './search-content.vue'
+  import searchBar from './searchBar.vue'
   export default {
     components: {
-      searchContent
+      searchContent,
+      searchBar
     },
     data () {
       return {
         whole: null,
-        searchBar: '全部'
+        searchBar: '全部',
+        bartype: null,
+        Switch: false
       }
     },
     mounted () {
@@ -54,8 +43,27 @@
       })
     },
     methods: {
-      sb (msg) {
-        console.log(msg)
+      openStype () {
+        this.Switch = true
+      },
+      seletcted (type) {
+        this.searchBar = type
+        switch (type) {
+          case '电影/电视':
+            getSearch().then(res => { this.whole = res.data.TV })
+            break
+          case '图书':
+            getSearch().then(res => { this.whole = res.data.Book })
+            break
+          case '唱片':
+            getSearch().then(res => { this.whole = res.data.Muisc })
+            break
+          default :
+            getSearch().then(res => { this.whole = res.data.whole })
+        }
+      },
+      Close () {
+        this.Switch = false
       }
     }
   }
@@ -118,33 +126,5 @@
   background:$bjgray;
   line-height:px2rem(45);
   text-indent:px2rem(20);
-}
-@keyframes searchBar 
-{
-  from {height:0;}
-  to {height:px2rem(300);}
-}
-.typeBar {
-  width:px2rem(80);
-  position:fixed;
-  top:px2rem(150);
-  left:px2rem(12);
-  z-index:99;
-  background:$bj;
-  text-indent:px2rem(10);
-  border-radius:px2rem(3);
-  box-shadow:px2rem(0) px2rem(1) px2rem(10) rgba(0,0,0,1);
-  height:px2rem(300);
-  li {
-    height:px2rem(30);
-    line-height:px2rem(30);
-    box-shadow:0;
-  }
-}
-.searchBar-enter-active {
-  animation: searchBar .5s;
-}
-.searchBar-leave-active {
-  animation: searchBar .5 sreverse;
 }
 </style>

@@ -75,5 +75,131 @@
       "name" : "清明上河图",
       "type": "电视剧"
     }
+  },
+  "TV": {
+    "1" :{
+      "ranking" : 1,
+      "name" : "绣春刀"
+    },
+    "2" :{
+      "ranking" : 2,
+      "name" : "悟空传"
+    },
+    "3" :{
+      "ranking" : 3,
+      "name" : "大护法"
+    },
+    "4" :{
+      "ranking" : 4,
+      "name" : "无人机"
+    },
+    "5" :{
+      "ranking" : 5,
+      "name" : "异行"
+    },
+    "6" :{
+      "ranking" : 6,
+      "name" : "扫黄"
+    },
+    "7" :{
+      "ranking" : 7,
+      "name" : "吃吃的唉"
+    },
+    "8" :{
+      "ranking" : 8,
+      "name" : "速度与激情"
+    },
+    "9" :{
+      "ranking" : 9,
+      "name" : "极限特工"
+    },
+    "10" :{
+      "ranking" : 10,
+      "name" : "扫毒"
+    }
+  },
+  "Book": {
+    "1" :{
+      "ranking" : 1,
+      "name" : "我的前半生"
+    },
+    "2" :{
+      "ranking" : 2,
+      "name" : "悟空传"
+    },
+    "3" :{
+      "ranking" : 3,
+      "name" : "人类简史"
+    },
+    "4" :{
+      "ranking" : 4,
+      "name" : "解忧杂货店"
+    },
+    "5" :{
+      "ranking" : 5,
+      "name" : "1984"
+    },
+    "6" :{
+      "ranking" : 6,
+      "name" : "百年孤独"
+    },
+    "7" :{
+      "ranking" : 7,
+      "name" : "巨人的陨落"
+    },
+    "8" :{
+      "ranking" : 8,
+      "name" : "三体"
+    },
+    "9" :{
+      "ranking" : 9,
+      "name" : "少有人走的路"
+    },
+    "10" :{
+      "ranking" : 10,
+      "name" : "三国演义"
+    }
+  },
+  "Muisc": {
+    "1" :{
+      "ranking" : 1,
+      "name" : "归乡"
+    },
+    "2" :{
+      "ranking" : 2,
+      "name" : "挺爱"
+    },
+    "3" :{
+      "ranking" : 3,
+      "name" : "猎户星座"
+    },
+    "4" :{
+      "ranking" : 4,
+      "name" : "Meloderanm"
+    },
+    "5" :{
+      "ranking" : 5,
+      "name" : "Ultralife"
+    },
+    "6" :{
+      "ranking" : 6,
+      "name" : "无限剑"
+    },
+    "7" :{
+      "ranking" : 7,
+      "name" : "范特西"
+    },
+    "8" :{
+      "ranking" : 8,
+      "name" : "紫"
+    },
+    "9" :{
+      "ranking" : 9,
+      "name" : "Voyager 3"
+    },
+    "10" :{
+      "ranking" : 10,
+      "name" : "菊花台"
+    }
   }
 }

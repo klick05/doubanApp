@@ -12,7 +12,8 @@ const read = r => require.ensure([], () => r(require('../page/mainContent/childr
 const tv = r => require.ensure([], () => r(require('../page/mainContent/children/douban/Tv/TV.vue')), 'tv')
 const local = r => require.ensure([], () => r(require('../page/mainContent/children/douban/local/local.vue')), 'local')
 const music = r => require.ensure([], () => r(require('../page/mainContent/children/douban/music/music.vue')), 'music')
-const search = r => require.ensure([], () => r(require('../page/search/hom-search.vue')))
+const search = r => require.ensure([], () => r(require('../page/search/hom-search.vue')), 'search')
+const stay = r => require.ensure([], () => r(require('../page/stay/stay.vue')), 'stay')
 Vue.use(Router)
 
 export default new Router({
@@ -84,6 +85,11 @@ export default new Router({
     {
       path: '/search',
       component: search,
+      meta: { keepAlive: true }
+    },
+    {
+      path: '/stay',
+      component: stay,
       meta: { keepAlive: true }
     }
   ]

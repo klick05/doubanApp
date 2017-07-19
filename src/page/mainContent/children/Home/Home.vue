@@ -11,7 +11,7 @@
     <div class="banner">
       <swiper :options="swiperOption">
         <swiper-slide v-for="item in imgData">
-          <img :src="item" alt="">
+          <img :src="item" alt="" @click="$router.push('/stay')">
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>

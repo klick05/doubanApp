@@ -7,5 +7,6 @@ export default {
   },
   [types.USE_OUT] (state) {
     state.login = false
+    state.use = null
   }
 }

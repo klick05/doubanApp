@@ -31,7 +31,7 @@ export default {
         id: 188683784,
         img: 'http://www.005.tv/uploads/allimg/161102/115Q56105-6.jpg'
       })
-      this.$router.push('/main')
+      this.$route.push('/main')
     }
   }
 }
