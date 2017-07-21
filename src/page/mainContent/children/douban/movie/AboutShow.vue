@@ -3,7 +3,7 @@
     <douban-container title="影院即将上映">
       <a href="" slot="alink">更多></a>
       <swiper :options="swiperOption">
-        <swiper-slide v-for="item in aboutShowData">
+        <swiper-slide v-for="item in aboutShowData"  @click.native="$router.push('/stay')">
           <douban-content :name="item.name" :cover="item.cover" :time="item.time">
             <p>{{item.wantsee}}人想看</p>
           </douban-content>

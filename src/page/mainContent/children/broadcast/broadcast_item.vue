@@ -12,7 +12,7 @@
           关注
          </div>
       </div>
-      <div class="item_content">
+      <div class="item_content"  @click="$router.push('/stay')">
         <p v-html="content">
         </p>
         <div v-if="imgData" class="item_content_img">
@@ -62,6 +62,7 @@ export default {
       position:absolute;
       right:px2rem(5);
       top:0;
+      z-index:99;
     }
     .item_top {
       position:relative;

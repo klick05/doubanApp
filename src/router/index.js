@@ -14,14 +14,28 @@ const local = r => require.ensure([], () => r(require('../page/mainContent/child
 const music = r => require.ensure([], () => r(require('../page/mainContent/children/douban/music/music.vue')), 'music')
 const search = r => require.ensure([], () => r(require('../page/search/hom-search.vue')), 'search')
 const stay = r => require.ensure([], () => r(require('../page/stay/stay.vue')), 'stay')
+const BMsearch = r => require.ensure([], () => r(require('../page/search/bookmovie-search.vue')), 'BookmovieSearch')
+import start from '../page/stay/start.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      if (from.meta.keepAlive) {
+        from.meta.savedPosition = document.body.scrollTop
+      }
+      return {x: 0, y: to.meta.savedPosition || 0}
+    }
+  },
   routes: [
     {
       path: '/',
       name: 'mainContent',
       component: mainContent,
+      redirect: '/start',
       children: [
         {
           path: 'Home',
@@ -78,6 +92,11 @@ export default new Router({
       ]
     },
     {
+      path: '/start',
+      name: 'start',
+      component: start
+    },
+    {
       path: '/login',
       component: login,
       meta: { keepAlive: true }
@@ -90,6 +109,11 @@ export default new Router({
     {
       path: '/stay',
       component: stay,
+      meta: { keepAlive: true }
+    },
+    {
+      path: '/bksearch',
+      component: BMsearch,
       meta: { keepAlive: true }
     }
   ]

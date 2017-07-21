@@ -1,7 +1,7 @@
 <template>  
 <div class="content_item">
           <img :src="cover" alt="">
-          <div class="group_msg">
+          <div class="group_msg" @click="$router.push('/stay')">
             <h3>{{name}}</h3>
             <p>{{describe}}</p>
           </div>

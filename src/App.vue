@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-   <transition name="appRoute" out-in>
+  <transition name="appRoute">
     <router-view></router-view>
-   </transition>
+  </transition>
   </div>
 </template>
 
 <script>
+import '../src/flexible/flexible'
 export default {
   name: 'app'
 }

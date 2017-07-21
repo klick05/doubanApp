@@ -3,7 +3,7 @@
     <douban-container title="最受关注的虚构类图书">
       <a href="" slot="alink">更多></a>
       <swiper :options="swiperOption">
-        <swiper-slide v-for="item in ImaginaryData">
+        <swiper-slide  @click.native="$router.push('/stay')" v-for="item in ImaginaryData">
           <douban-content :name="item.name" :cover="item.cover">
             <score :score="item.score"></score>
           </douban-content>

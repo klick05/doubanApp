@@ -3,7 +3,7 @@
       <a style="color:#A6AAAF" class="More" href="javascript:;" slot="More">更多专栏></a>
       <swiper :options="swiperOption">
         <swiperSlide v-for="item in timeData">
-          <time-item
+          <time-item  @click.native="$router.push('/stay')"
             :title="item.title"
             :author="item.author"
             :imgSrc="item.imgSrc"

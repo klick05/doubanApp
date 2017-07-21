@@ -2,7 +2,7 @@
   <div class="FilmCritic">
       <douban-container title="最受欢迎影评">
         <a href="" slot="alink">更多></a>
-        <film-item v-for="item in filmItem" 
+        <film-item  @click.native="$router.push('/stay')" v-for="item in filmItem" 
                    :imgSrc="item.imgSrc"
                    :content="item.content"
                    >

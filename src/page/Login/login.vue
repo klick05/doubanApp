@@ -1,8 +1,8 @@
 <template>
-  <div class="Login" @click="$router.go(-1)">
-    <span class="BackOff"></span>
+  <div class="Login" >
+    <span class="BackOff" @click="$router.go(-1)"></span>
       <h2 class="Login_title">欢迎来到豆瓣</h2>
-      <form id="LoginFrom">
+      <div id="LoginFrom">
         <div>
           <input type="text" placeholder="手机号/邮箱" autofocus="autofocus">
         </div>
@@ -10,7 +10,7 @@
           <input type="password" placeholder="密码">
         </div>
         <button class="loginBtn" @click="goLogin">登入</button>
-      </form>
+      </div>
       <div class="register_forget">
         <span>注册豆瓣</span>
         <span>忘记密码</span>
@@ -24,14 +24,19 @@
 
 <script>
 export default {
+  data () {
+    return {
+
+    }
+  },
   methods: {
     goLogin () {
       this.$store.commit('USE_LOGIN', {
         name: '宾克斯的美酒',
         id: 188683784,
-        img: 'http://www.005.tv/uploads/allimg/161102/115Q56105-6.jpg'
+        img: 'http://scimg.jb51.net/allimg/160310/14-160310144342K0.jpg'
       })
-      this.$route.push('/main')
+      this.$router.push('/main')
     }
   }
 }

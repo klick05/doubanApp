@@ -10,7 +10,7 @@
     </div>
     <hot-activity></hot-activity>
     <doubanContainer title="编辑推荐">
-        <swiper :options="swiperOption">
+        <swiper  @click.native="$router.push('/stay')" :options="swiperOption">
           <swiperSlide v-for="item in bjtjData">
             <img :src="item" alt="">
           </swiperSlide>

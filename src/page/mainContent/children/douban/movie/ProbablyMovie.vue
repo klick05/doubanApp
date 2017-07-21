@@ -2,7 +2,7 @@
   <div class="probablymovie">
     <douban-container title="你可能感兴趣的" more="yes">
       <div class="probably_item">
-        <douban-content v-for="item in probablyData" 
+        <douban-content  @click.native="$router.push('/stay')" v-for="item in probablyData" 
                         :cover="item.cover"
                         :name="item.name"
         >

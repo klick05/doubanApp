@@ -2,7 +2,7 @@
   <douban-container title="今日更新" more="">
     <a slot="alink" href="javascript">更多></a>
     <swiper :options="swiperOption">
-      <swiper-slide v-for="item in todayTv">
+      <swiper-slide  @click.native="$router.push('/stay')" v-for="item in todayTv">
         <div class="todayUp_item">
           <div class="item_left">
             <img :src="item.cover" alt="">

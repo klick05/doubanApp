@@ -2,7 +2,7 @@
 <div>
     <div class="public_top">
       <h2>{{title}}</h2>
-      <img v-if="imgleft"class="img_left" :src="imgleft" alt="">
+      <img v-if="imgleft"  @click="$emit('serach')" class="img_left" :src="imgleft" alt="">
       <img v-if="imgright" @click="active" class="img_right":src="imgright" alt="">
     </div>
 </div>

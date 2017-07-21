@@ -3,7 +3,7 @@
     <douban-container title="热门活动">
       <a href="" slot="alink">更多></a>
       <swiper :options="swiperOption">
-        <swiper-slide v-for="item in getLocal">
+        <swiper-slide  @click.native="$router.push('/stay')" v-for="item in getLocal">
           <douban-content :name="item.name" :cover="item.cover" :ticket="item.ticket">
             <p>{{item.date}}</p>
           </douban-content>

@@ -3,7 +3,7 @@
     <douban-container title="近期值得看的综艺节目">
       <a href="" slot="alink">更多></a>
       <swiper :options="swiperOption">
-        <swiper-slide v-for="item in Zongyi">
+        <swiper-slide  @click.native="$router.push('/stay')" v-for="item in Zongyi">
           <douban-content :name="item.name" :cover="item.cover">
             <score :score="item.score"></score>
           </douban-content>

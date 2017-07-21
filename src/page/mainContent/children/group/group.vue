@@ -1,6 +1,7 @@
 <template>
   <div class="Group">
     <douban-top
+      @active="goActive"
       title="小组"
       :imgleft="require('../../../../assets/imge/ic_group_search.png')"
       :imgright="require('../../../../assets/imge/ic_chat_green.png')"
@@ -120,6 +121,9 @@ export default {
           this.Total.splice(i, 1)
         }
       }
+    },
+    goActive () {
+      this.loginState ? this.$router.push('/stay') : this.$router.push('/login')
     }
   },
   computed: {
@@ -129,6 +133,9 @@ export default {
       } else {
         return false
       }
+    },
+    loginState () {
+      return this.$store.state.login
     }
   }
 }

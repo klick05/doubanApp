@@ -3,7 +3,7 @@
     <douban-container title="影院热映">
       <a href="" slot="alink">更多></a>
       <swiper :options="swiperOption">
-        <swiper-slide v-for="item in HotMovieData">
+        <swiper-slide  @click.native="$router.push('/stay')" v-for="item in HotMovieData">
           <douban-content :name="item.name" :cover="item.cover">
             <score :score="item.score"></score>
           </douban-content>

@@ -38,55 +38,55 @@
     <div class="mine_menu">
       <table>
         <tr>
-            <router-link tag="td" :to="login? '': '/login'">
+            <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_photo_liked.png" alt="">
               <p>喜欢</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_note.png" alt="">
               <p>日记</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_album.png" alt="">
               <p>相册</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_status.png" alt="">
               <p>我的广播</p>
             </router-link>
         </tr>
         <tr>
-            <router-link tag="td" :to="login? '': '/login'">
+            <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_movies_tvs.png" alt="">
               <p>电影·电视</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_books.png" alt="">
               <p>读书</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_music.png" alt="">
               <p>音乐</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_events.png" alt="">
               <p>同城活动</p>
             </router-link>
         </tr>
         <tr>
-            <router-link tag="td" :to="login? '': '/login'">
+            <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/dbtime.png" alt="">
               <p>豆瓣时间</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_doulist.png" alt="">
               <p>豆列</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_orders.png" alt="">
               <p>订单</p>
             </router-link>
-             <router-link tag="td" :to="login? '': '/login'">
+             <router-link tag="td" :to="login? '/stay': '/login'">
               <img src="../../../../assets/imge/ic_my_wallet.png" alt="">
               <p>钱包</p>
             </router-link>
@@ -173,7 +173,7 @@ export default {
           left:px2rem(200);
           color:$bj;
           &:after {
-            content:'';
+            content:'/stay';
             display:inline-block;
             @include wh(px2rem(12),px2rem(15));
             @include bimg('../../../../assets/imge/whitejt.png');

@@ -18,7 +18,7 @@
     </div>
     <!-- 热点 -->
     <module-one moduleTitle="热点" orange="yes">
-      <module-item v-for="(item, index) in hotData" 
+      <module-item @click.native="$router.push('/stay')" v-for="(item, index) in hotData" 
                :title="item.title"
                :content="item.content"
                :imgSrc="item.imgSrc"
@@ -32,7 +32,8 @@
     <douban-time></douban-time>
     <!--一刻-->
     <module-one moduleTitle="一刻" green="yes">
-      <module-item 
+      <module-item
+         @click.native="$router.push('/stay')"
         :title="yikeData.title"
         :content="yikeData.content"
         :imgSrc="yikeData.imgSrc"
@@ -46,7 +47,8 @@
     <find></find>
     <!--为你推荐-->
     <module-one moduleTitle="为你推荐" green="yes">
-      <module-item v-for="(item, index) in recommendData" 
+      <module-item v-for="(item, index) in recommendData"
+                @click.native="$router.push('/stay')"
                :title="item.title"
                :content="item.content"
                :imgSrc="item.imgSrc"

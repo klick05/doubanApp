@@ -3,7 +3,7 @@
     <douban-container title="官方售票">
       <a href="" slot="alink">更多></a>
       <swiper :options="swiperOption">
-        <swiper-slide v-for="item in official">
+        <swiper-slide  @click.native="$router.push('/stay')" v-for="item in official">
           <douban-content :name="item.name" :cover="item.cover" :ticket="item.ticket">
             <p>{{item.date}}</p>
           </douban-content>

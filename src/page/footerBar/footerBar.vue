@@ -49,7 +49,7 @@ export default {
   background-position:center;
 }
 a {
-  @include sc(24px,$gray)
+  @include sc(px2rem(12),$gray)
 }
 .footerBar{
   @include wh(100%,px2rem(50))
@@ -67,7 +67,8 @@ a {
     display:block;
     @include wh(px2rem(50),100%)
     div {
-      @include wh(100%,px2rem(30));
+      width:100%;
+      height:0.8rem;
     }
   }
   a:nth-of-type(1) div{

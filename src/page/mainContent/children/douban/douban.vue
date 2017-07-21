@@ -2,6 +2,7 @@
   <div class="douban">
     <douban-top title="书影音"
                 v-on:active="login"
+                v-on:serach="$router.push('/bksearch')"
                 :imgleft="require('../../../../assets/imge/ic_group_search.png')"
                 :imgright="require('../../../../assets/imge/ic_chat_green.png')">
     </douban-top>
@@ -32,12 +33,12 @@ export default {
   },
   computed: {
     loginState () {
-      return this.$store.login
+      return this.$store.state.login
     }
   },
   methods: {
     login () {
-      this.$store.login ? '' : this.$router.push('/login')
+      this.loginState ? this.$router.push('/stay') : this.$router.push('/login')
     }
   }
 }
@@ -77,7 +78,7 @@ export default {
   }
 }
 .douban-enter-active, .douban-leave-active {
-  transition: opacity .5s;
+  transition: opacity .3s;
 }
 .douban-enter, .douban-leave-active {
   opacity: 0;

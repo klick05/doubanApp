@@ -2,7 +2,7 @@
   <div>
     <douban-container title="今日推荐影人">
       <swiper :options="swiperOption">
-        <swiper-slide v-for="item in filmData">
+        <swiper-slide  @click.native="$router.push('/stay')" v-for="item in filmData">
           <douban-content :name="item.name" :cover="item.cover">
             <p>{{item.remarks}}</p>
           </douban-content>

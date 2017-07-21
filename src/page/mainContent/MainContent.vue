@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .main-enter-active, .main-leave-active {
-  transition: opacity .5s;
+  transition: opacity .3s;
 }
 .main-enter, .main-leave-active {
   opacity: 0;

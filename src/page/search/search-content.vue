@@ -1,6 +1,6 @@
 <template>
 <ul class="HomeSearch_content">
-      <router-link tag="li" to="/haha">
+      <router-link tag="li" to="/stay">
       <span v-if="ranking > 3" class="ranking">{{ranking}}</span>
       <img v-if="ranking === 1" src="../../assets/imge/s_one.png" alt="">
       <img v-if="ranking === 2" src="../../assets/imge/s_two.png" alt="">
